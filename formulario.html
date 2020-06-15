@@ -1,4 +1,4 @@
-<!DOCTYPE html>
+ <!DOCTYPE html>
 <html lang="esp">
 <head>
 	<meta charset="UTF-8">
@@ -12,37 +12,49 @@
 	<script src="https://kit.fontawesome.com/95df101b02.js" crossorigin="anonymous"></script>
 </head>
 <body>
-	<header class="flex-header">	
-		<a href="index.html"><img src="images/3R-IDEAS.png" alt="3R" id="logo"></a> 
-		<nav class="navbar navbar-expand-lg navbar-light">
-			<a class="navbar-brand" href="#"></a>
-  			<button class="navbar-toggler" type="button" data-toggle="collapse" data-target="#navbarSupportedContent" aria-controls="navbarSupportedContent" aria-expanded="false" aria-label="Toggle navigation">
-    			<span class="navbar-toggler-icon"></span>
-  			</button>
-  			<div class="collapse navbar-collapse" id="navbarSupportedContent">
-    			<ul class="navbar-nav mr-auto">
-      				<li class="nav-item">
-        				<a class="nav-link" href="index.html">Home</a>
-      				</li>
-      				<li class="nav-item">
-        				<a class="nav-link" href="nosotros.html">Quiénes somos</a>
-      				</li>
-      				<li class="nav-item">
-        				<a class="nav-link" href="servicios.html">Servicios</a>
-        			</li>	
-        			<li class="nav-item">
-        				<a class="nav-link" href="formulario.html">Contacto</a>
-        			</li>
-    			</ul>
-			</div>
-		</nav>		       	    
-	</header>
+	<header class="flex-header">
+    <a href="index.html"><img src="images/3R-IDEAS.png" alt="3R" id="logo"></a> 
+    <nav class="navbar navbar-expand-lg navbar-light">
+      <a class="navbar-brand" href="#"></a>
+        <button class="navbar-toggler" type="button" data-toggle="collapse" data-target="#navbarSupportedContent" aria-controls="navbarSupportedContent" aria-expanded="false" aria-label="Toggle navigation">
+          <span class="navbar-toggler-icon"></span>
+        </button>
+        <div class="collapse navbar-collapse" id="navbarSupportedContent">
+          <ul class="navbar-nav mr-auto align-items-center">
+              <li class="nav-item">
+                <a class="nav-link" href="index.html">Home</a>
+              </li>
+              <li class="nav-item active">
+                <a class="nav-link" href="nosotros.html">Quiénes somos</a>
+              </li>
+              <li class="nav-item">
+                <a class="nav-link" href="servicios.html">Servicios</a>
+              </li> 
+              <li class="nav-item">
+                <a class="nav-link" href="formulario.html">Contacto</a>
+              </li>
+              <li class="nav-item">
+                <a href="https://www.instagram.com/3rideas_/"><img class="header-redes" src="images/instagram.png"></a>
+              </li>
+              <li class="nav-item">
+                <a href="https://es-es.facebook.com/3RIDEAS"><img class="header-redes" src="images/facebook.png"></a>
+              </li>
+              <li class="nav-item">
+                <a href="https://twitter.com/3rideas"><img class="header-redes" src="images/twitter.png"></a>
+              </li>
+              <li class="nav-item">
+                <a href="https://www.linkedin.com/company/3r-ideas"><img class="header-redes" src="images/linkedin.png"></a>
+              </li>
+          </ul>
+      </div>
+    </nav>           
+  </header>
 	<section>
 		<div class="grid-contacto container-md">
-			<div class="elementos" id="izquierda">
+			<div class="elementos" id="derecha">
 				<h1 id="contactanos"><strong>Contactanos</strong></h1>
 				<form action="#" method="post">	
-					<input class="formulario" placeholder="Nombre" type="Text" name="Name" required>				
+					<input class="formulario" placeholder="Nombre y Apellido" type="Text" name="Name" required>				
 					<input class="formulario" placeholder="Email" type="email" name="mail" required>
 					<input class="formulario" type="Text" name="subject" placeholder="Asunto">	
 					<textarea id="comentario" name="comments" placeholder="Mensaje" class="formulario" required></textarea>
@@ -70,19 +82,10 @@
 					</div>
 	    		</form>			
 	    	</div>
-	    	<div class="elementos" id="derecha">
+	    	<div class="elementos" id="izquierda">
 				<h2 id="seguinos"><strong>Seguinos en nuestras redes</strong></h2>
-				<div class="flex-redes">
-					<a href="https://www.instagram.com/3rideas_/"><i class="boton fab fa-instagram fa-4x redes text-dark"></i></a>
-					<a href="https://es-es.facebook.com/3RIDEAS"><i class="boton fab fa-facebook-square fa-4x redes text-dark"></i></a>
-					<a href="https://twitter.com/3rideas"><i class="boton fab fa-twitter-square fa-4x redes text-dark"></i></a>
-					<a href="https://www.linkedin.com/company/3r-ideas"><i class="boton fab fa-linkedin fa-4x redes text-dark"></i></a>
-					<div class="flex-mail">
-						<i class="fas fa-envelope fa-4x text-dark" id="mailLogo"></i><p id="email">hola@3rideas.com</p>   	
-		    		</div>
-		        </div>
-			</div>
-		</div>
+      </div>
+    </div>
 	</section>
 	<footer class="bg-dark">
 		<div class="container py-4 footer-grid">
@@ -107,7 +110,7 @@
       </div>     
     </div>     	
     <div id="derechos">
-			<p class="text-light text-center" id="derechosP">Todos los derechos reservados &copy; 2020. Diseñado por <strong>Manuel Lacarra</strong></p>
+			<p class="text-dark text-center" id="derechosP">Todos los derechos reservados &copy; 2020. Diseñado por <strong>Manuel Lacarra</strong></p>
 		</div>				  
 	</footer>
 	<script src="https://code.jquery.com/jquery-3.5.1.slim.min.js" integrity="sha384-DfXdz2htPH0lsSSs5nCTpuj/zy4C+OGpamoFVy38MVBnE+IbbVYUew+OrCXaRkfj" crossorigin="anonymous"></script>

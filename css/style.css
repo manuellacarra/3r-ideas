@@ -36,14 +36,17 @@ header {
   z-index: 999;
   background-color: white; }
   header #logo {
-    height: 50px;
+    height: 47px;
     width: 170px;
     margin-left: 10px;
     margin-bottom: 0px;
     margin-top: 0px; }
-  header .navbar a:hover {
-    color: #6f9c53;
-    transition: 300ms; }
+  header .header-redes {
+    height: 25px;
+    width: 25px;
+    margin-left: 0px;
+    margin-right: 10px;
+    opacity: 40%; }
 
 .flex-header {
   display: flex;
@@ -192,22 +195,25 @@ h2 {
 /*--------------------------------------------------------------
 # Nosotros
 --------------------------------------------------------------*/
-.titulo, #nuestrosServicios, .grid-contacto .elementos #contactanos, .grid-contacto #seguinos {
-  font-family: "Poppins", sans-serif;
-  color: #000000;
-  font-size: 2.5rem; }
-
-#nosotros {
-  margin-bottom: 50px;
-  padding-top: 50px;
+.nosotrosBackground {
+  background: url("../images/estrategia-byw.jpg");
+  background-size: cover;
   margin-top: 50px;
-  margin-left: 20px; }
-
-.parrafo, #nosotrosParrafo {
-  font-size: 18px; }
-
-#nosotrosParrafo {
-  margin-bottom: 60px; }
+  padding-bottom: 50px;
+  margin-bottom: 30px;
+  padding-left: 20px; }
+  .nosotrosBackground .titulo, .nosotrosBackground #nuestrosServicios, .nosotrosBackground .grid-contacto .elementos #contactanos, .grid-contacto .elementos .nosotrosBackground #contactanos, .nosotrosBackground .grid-contacto #seguinos, .grid-contacto .nosotrosBackground #seguinos {
+    font-family: "Poppins", sans-serif;
+    color: #b2b2b2;
+    font-size: 2.5rem; }
+  .nosotrosBackground #nosotros {
+    margin-bottom: 20px;
+    padding-top: 20px;
+    margin-top: 10px;
+    margin-left: 0px; }
+  .nosotrosBackground .parrafo, .nosotrosBackground #nosotrosParrafo {
+    font-size: 18px;
+    color: white; }
 
 .grid-nosotros {
   display: grid;
@@ -216,7 +222,8 @@ h2 {
   justify-content: space-around;
   text-align: center;
   background-color: #dcebbf;
-  padding-top: 100px;
+  padding-top: 50px;
+  margin-top: 20px;
   grid-template-areas: "izquierda derecha"; }
   @media screen and (min-width: 320px) and (max-width: 768px) {
     .grid-nosotros {
@@ -247,7 +254,7 @@ h2 {
     display: none; } }
 
 /*--------------------------------------------------------------
-# Forulario
+# Formulario
 --------------------------------------------------------------*/
 .grid-contacto {
   display: grid;
@@ -295,7 +302,7 @@ h2 {
   .grid-contacto #seguinos {
     margin-top: 0%;
     padding-top: 0px;
-    margin-left: 20px;
+    margin-left: 5px;
     font-size: 2rem; }
   .grid-contacto .flex-redes {
     display: flex;
@@ -432,7 +439,7 @@ footer .footer-grid {
     padding-right: 0px; }
 
 footer #derechos {
-  background-color: #6f9c53;
+  background-color: #dcebbf;
   padding: 0px; }
   footer #derechos #derechosP {
     text-align: center;
