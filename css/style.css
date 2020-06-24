@@ -46,7 +46,8 @@ header {
     width: 25px;
     margin-left: 0px;
     margin-right: 10px;
-    opacity: 40%; }
+    opacity: 40%;
+    margin-bottom: 10px; }
 
 .flex-header {
   display: flex;
@@ -113,53 +114,69 @@ header {
       font-size: 18px;
       line-height: 24px; } }
 
-/*--------------------------------------------------------------
-# Index 2
---------------------------------------------------------------*/
-.why-us .content {
-  padding: 30px;
-  background: #848484;
-  border-radius: 4px;
-  color: #fff; }
-  .why-us .content h3 {
-    font-weight: 700;
-    font-size: 34px;
-    margin-bottom: 30px; }
-  .why-us .content p {
-    margin-bottom: 30px; }
-  .why-us .content .more-btn {
-    display: inline-block;
-    background: rgba(255, 255, 255, 0.2);
-    padding: 6px 30px 8px 30px;
-    color: #fff;
-    border-radius: 50px;
-    transition: all ease-in-out 0.4s; }
-    .why-us .content .more-btn i {
-      font-size: 14px; }
-    .why-us .content .more-btn .more-btn:hover {
-      color: #5fcf80;
-      background: #fff; }
+.gridIndex {
+  display: grid;
+  grid-gap: 0px;
+  justify-content: space-around;
+  grid-template-columns: 50% 50%;
+  align-items: center;
+  margin-bottom: 0px;
+  grid-template-areas: "izquierda derecha"; }
+  @media screen and (min-width: 250px) and (max-width: 768px) {
+    .gridIndex {
+      grid-template-areas: "izquierda izquierda" "derecha derecha"; } }
+  .gridIndex #indexIzquierda {
+    grid-area: izquierda; }
+  .gridIndex #indexDerecha {
+    grid-area: derecha;
+    margin-left: 10px;
+    margin-top: 20px; }
+  .gridIndex #manosPlanta {
+    height: auto;
+    width: 100%;
+    margin-left: 10px;
+    margin-bottom: 0px;
+    position: relative; }
 
-.why-us .icon-boxes .icon-box {
+.nuestrosServicios1 {
+  background-color: #6f9c53;
+  padding: 5px;
+  margin-top: 0px; }
+  .nuestrosServicios1 #nuestrosServicios2 {
+    color: white; }
+
+.gridIndexServicios {
+  display: grid;
+  grid-gap: 0px;
+  grid-template-columns: 33% 33% 33%;
+  margin-bottom: 0px;
+  padding-top: 50px;
   text-align: center;
-  background: #fff;
-  padding: 40px 30px;
-  width: 100%;
-  border: 1px solid #eef0ef; }
-  .why-us .icon-boxes .icon-box i {
-    font-size: 32px;
-    padding: 18px;
-    color: #5fcf80;
-    margin-bottom: 30px;
-    background: #ecf9f0;
-    border-radius: 50px; }
-  .why-us .icon-boxes .icon-box h4 {
-    font-size: 20px;
-    font-weight: 700;
-    margin: 0 0 30px 0; }
-  .why-us .icon-boxes .icon-box p {
-    font-size: 15px;
-    color: #848484; }
+  justify-content: space-around;
+  grid-template-areas: "izquierda centro derecha"; }
+  @media screen and (min-width: 250px) and (max-width: 768px) {
+    .gridIndexServicios {
+      text-align: center;
+      grid-template-areas: "izquierda izquierda izquierda" "centro centro centro" "derecha derecha derecha"; } }
+  .gridIndexServicios #gridIndexServiciosIzquierda {
+    grid-area: izquierda; }
+  .gridIndexServicios #gridIndexServiciosCentro {
+    grid-area: centro; }
+  .gridIndexServicios #gridIndexServiciosDerecha {
+    grid-area: derecha; }
+  .gridIndexServicios .imagenesIndexServicios {
+    height: 100px;
+    width: 100px;
+    border-color: #dcebbf;
+    margin-bottom: 10px; }
+    .gridIndexServicios .imagenesIndexServicios :hover {
+      transform: scale(1.1);
+      transform-origin: center;
+      transition: 300ms; }
+  .gridIndexServicios .tituloIndexServicios {
+    font-size: 1.3rem; }
+  .gridIndexServicios .parrafoIndexServicios {
+    font-size: 1rem; }
 
 /*--------------------------------------------------------------
 # General
@@ -202,7 +219,7 @@ h2 {
   padding-bottom: 50px;
   margin-bottom: 30px;
   padding-left: 20px; }
-  .nosotrosBackground .titulo, .nosotrosBackground #nuestrosServicios, .nosotrosBackground .grid-contacto .elementos #contactanos, .grid-contacto .elementos .nosotrosBackground #contactanos, .nosotrosBackground .grid-contacto #seguinos, .grid-contacto .nosotrosBackground #seguinos {
+  .nosotrosBackground .titulo, .nosotrosBackground .grid-contacto .elementos #contactanos, .grid-contacto .elementos .nosotrosBackground #contactanos, .nosotrosBackground .grid-contacto #seguinos, .grid-contacto .nosotrosBackground #seguinos {
     font-family: "Poppins", sans-serif;
     color: #b2b2b2;
     font-size: 2.5rem; }
@@ -225,13 +242,16 @@ h2 {
   padding-top: 50px;
   margin-top: 20px;
   grid-template-areas: "izquierda derecha"; }
-  @media screen and (min-width: 320px) and (max-width: 768px) {
+  @media screen and (min-width: 250px) and (max-width: 768px) {
     .grid-nosotros {
       grid-template-areas: "izquierda izquierda" "derecha derecha"; } }
   .grid-nosotros #nosotros-izquierda {
     grid-area: izquierda; }
   .grid-nosotros #nosotros-derecha {
     grid-area: derecha; }
+    .grid-nosotros #nosotros-derecha ul {
+      margin: 0px;
+      font-size: 15px; }
   .grid-nosotros .directores {
     height: 200px;
     width: 200px;
@@ -243,33 +263,138 @@ h2 {
 /*--------------------------------------------------------------
 # Servicios
 --------------------------------------------------------------*/
-#nuestrosServicios {
-  margin-bottom: 50px;
-  margin-top: 50px;
-  padding-top: 50px;
-  margin-left: 20px; }
+#estrategiaYGestion {
+  background-color: #b2b2b2;
+  padding: 10px;
+  font-size: 25px;
+  margin: 0px;
+  padding-left: 100px;
+  color: white; }
 
-@media screen and (min-width: 320px) and (max-width: 768px) {
-  .text-light-p {
-    display: none; } }
+.grid-estrategia {
+  display: grid;
+  grid-gap: 0px;
+  justify-content: space-around;
+  grid-template-columns: 50% 50%;
+  align-items: center;
+  padding-top: 10px;
+  margin: 0px;
+  grid-template-areas: "izquierda derecha"; }
+  @media screen and (min-width: 250px) and (max-width: 768px) {
+    .grid-estrategia {
+      grid-template-areas: "izquierda izquierda" "derecha derecha"; } }
+  .grid-estrategia #grid-estrategia-izquierda {
+    grid-area: izquierda;
+    margin-left: 20px;
+    margin-bottom: 20px;
+    margin-top: 20px; }
+  .grid-estrategia #grid-estrategia-derecha {
+    grid-area: derecha;
+    margin-left: 15px; }
+    .grid-estrategia #grid-estrategia-derecha ul {
+      margin-left: 0px; }
+      .grid-estrategia #grid-estrategia-derecha ul li {
+        font-size: 1rem; }
+
+#capacitaciones {
+  background-color: #dcebbf;
+  padding: 10px;
+  font-size: 25px;
+  margin: 0px;
+  padding-right: 150px;
+  text-align: right;
+  color: grey; }
+
+.grid-capacitaciones {
+  display: grid;
+  grid-gap: 0px;
+  justify-content: space-around;
+  grid-template-columns: 50% 50%;
+  align-items: center;
+  padding-top: 10px;
+  background-color: #6f9c53;
+  margin: 0px;
+  grid-template-areas: "izquierda derecha"; }
+  @media screen and (min-width: 250px) and (max-width: 768px) {
+    .grid-capacitaciones {
+      align-content: center;
+      grid-template-areas: "derecha derecha" "izquierda izquierda"; } }
+  .grid-capacitaciones #grid-capacitaciones-izquierda {
+    grid-area: izquierda;
+    margin-right: 15px; }
+    .grid-capacitaciones #grid-capacitaciones-izquierda ul {
+      margin-left: 0px; }
+      .grid-capacitaciones #grid-capacitaciones-izquierda ul li {
+        font-size: 1rem; }
+  .grid-capacitaciones #grid-capacitaciones-derecha {
+    grid-area: derecha;
+    margin-right: 20px;
+    margin-bottom: 20px;
+    margin-top: 20px; }
+
+#comunicacionDeImpacto {
+  background-color: #b2b2b2;
+  padding: 10px;
+  font-size: 25px;
+  margin: 0px;
+  padding-left: 100px;
+  color: black; }
+
+.grid-comunicacion {
+  display: grid;
+  grid-gap: 0px;
+  justify-content: space-around;
+  grid-template-columns: 50% 50%;
+  align-items: center;
+  padding-top: 10px;
+  margin: 0px;
+  background-color: #dcebbf;
+  grid-template-areas: "izquierda derecha"; }
+  @media screen and (min-width: 250px) and (max-width: 768px) {
+    .grid-comunicacion {
+      align-content: center;
+      grid-template-areas: "izquierda izquierda" "derecha derecha"; } }
+  .grid-comunicacion #grid-comunicacion-izquierda {
+    grid-area: izquierda;
+    margin-left: 20px;
+    margin-bottom: 20px;
+    margin-top: 20px; }
+  .grid-comunicacion #grid-comunicacion-derecha {
+    grid-area: derecha;
+    margin-left: 15px; }
+    .grid-comunicacion #grid-comunicacion-derecha ul {
+      margin-left: 0px; }
+      .grid-comunicacion #grid-comunicacion-derecha ul li {
+        font-size: 1rem; }
+
+.fotos-servicios {
+  height: auto;
+  width: 100%;
+  position: relative;
+  max-width: 100%; }
 
 /*--------------------------------------------------------------
 # Formulario
 --------------------------------------------------------------*/
 .grid-contacto {
   display: grid;
-  grid-gap: 0px;
   grid-template-columns: 50% 50%;
-  justify-content: space-around;
-  margin-top: 100px;
+  justify-content: space-between;
+  grid-gap: 0px;
+  margin-left: 0px;
+  margin-top: 80px;
   grid-template-areas: "izquierda derecha"; }
-  @media screen and (min-width: 320px) and (max-width: 768px) {
+  @media screen and (min-width: 250px) and (max-width: 768px) {
     .grid-contacto {
       grid-template-areas: "izquierda izquierda" "derecha derecha"; } }
   .grid-contacto #izquierda {
-    grid-area: izquierda; }
+    grid-area: izquierda;
+    background-color: #6f9c53;
+    padding: 20px;
+    padding-bottom: 0px; }
   .grid-contacto #derecha {
-    grid-area: derecha; }
+    grid-area: derecha;
+    padding: 20px; }
   .grid-contacto .elementos {
     margin: 10px; }
     .grid-contacto .elementos #contactanos {
@@ -299,47 +424,56 @@ h2 {
       font-size: 20px;
       border: 1px solid #848484;
       font-family: 'Roboto'; }
-  .grid-contacto #seguinos {
-    margin-top: 0%;
-    padding-top: 0px;
-    margin-left: 5px;
-    font-size: 2rem; }
-  .grid-contacto .flex-redes {
-    display: flex;
-    flex-direction: row;
-    flex-wrap: wrap;
-    margin-top: 30px;
-    margin-bottom: 20px;
-    margin-left: 50px;
-    align-items: center;
-    margin-right: 100px; }
-    .grid-contacto .flex-redes .redes {
-      height: 90px;
-      width: 100px;
-      margin-top: 30px;
-      margin-left: 90px;
-      padding: 0px; }
-    .grid-contacto .flex-redes .flex-mail {
-      display: flex;
-      flex-direction: row;
-      margin-top: 0px; }
-      .grid-contacto .flex-redes .flex-mail #mailLogo {
-        height: 90px;
-        width: 100px;
-        margin-top: 30px;
-        margin-left: 90px;
-        margin-right: 0px;
-        padding-right: 0px; }
-      .grid-contacto .flex-redes .flex-mail #email {
-        margin-top: 50px;
-        margin-left: 0px;
-        font-size: 20px;
-        padding-left: 0px; }
-  .grid-contacto .boton:hover {
+  .grid-contacto form .boton:hover {
     transform: scale(1.1);
     transform-origin: center;
     transition: 300ms;
-    filter: invert(70%); }
+    filter: invert(100%); }
+  .grid-contacto #seguinos {
+    margin-top: 0%;
+    padding-top: 0px;
+    font-size: 2rem;
+    margin: 0px; }
+  .grid-contacto .gridContactoIcons {
+    display: grid;
+    grid-gap: 40px;
+    grid-template-columns: 7% 93%;
+    margin-top: 20px;
+    margin-bottom: 0px;
+    padding-bottom: 0px;
+    align-items: center;
+    grid-template-areas: "tel num" "sobre mail" "flecha ciudad"; }
+    .grid-contacto .gridContactoIcons #tel-icono-contacto {
+      grid-area: tel; }
+    .grid-contacto .gridContactoIcons #tel-enlace-contacto {
+      grid-area: num; }
+    .grid-contacto .gridContactoIcons #mail-icono-contacto {
+      grid-area: sobre; }
+    .grid-contacto .gridContactoIcons #mail-enlace-contacto {
+      grid-area: mail; }
+    .grid-contacto .gridContactoIcons #map-icono-contacto {
+      grid-area: flecha; }
+    .grid-contacto .gridContactoIcons #map-enlace-contacto {
+      grid-area: ciudad; }
+    .grid-contacto .gridContactoIcons p {
+      font-size: 1.5rem; }
+  .grid-contacto .flexRedesContacto {
+    display: flex;
+    flex-direction: row;
+    flex-wrap: wrap;
+    justify-content: space-around;
+    align-content: left;
+    padding-left: 50px;
+    margin: 0px; }
+    .grid-contacto .flexRedesContacto .redesContacto {
+      margin-left: 0px;
+      margin-right: 50px;
+      margin-top: 30px;
+      padding-bottom: 20px; }
+    .grid-contacto .flexRedesContacto .redesContacto:hover {
+      transform: scale(1.1);
+      transform-origin: center;
+      transition: 300ms; }
   @media (max-width: 768px) {
     .grid-contacto .container-md {
       display: none; } }
@@ -347,112 +481,113 @@ h2 {
 /*--------------------------------------------------------------
 # Footer
 --------------------------------------------------------------*/
-footer .footer-grid {
-  display: grid;
-  grid-gap: 0px;
-  grid-template-columns: 33% 33% 33%;
-  margin-bottom: 0px;
-  padding-bottom: 0px;
-  grid-template-areas: "izquierda centro derecha"; }
-  @media screen and (min-width: 320px) and (max-width: 768px) {
-    footer .footer-grid {
-      grid-template-areas: "izquierda izquierda" "centro centro" "derecha derecha"; } }
-  footer .footer-grid #ft-izquierda {
-    grid-area: izquierda; }
-  footer .footer-grid #ft-centro {
-    grid-area: centro; }
-  footer .footer-grid #ft-derecha {
-    grid-area: derecha; }
-  footer .footer-grid #footerLogo {
-    height: 50px;
-    width: 200px;
-    margin-left: 10px;
-    margin-bottom: 0px;
-    margin-top: 2.5rem;
-    filter: invert(70%); }
-    @media screen and (min-width: 320px) and (max-width: 768px) {
-      footer .footer-grid #footerLogo {
-        display: none; } }
-  footer .footer-grid p, footer .footer-grid h3 {
-    font-size: 15px; }
-  footer .footer-grid h3 {
-    margin-left: 30px;
-    text-decoration: underline;
-    margin-top: 0px; }
-  footer .footer-grid .ft-grid-1 {
+footer {
+  padding-bottom: 0px; }
+  footer .footer-grid {
     display: grid;
     grid-gap: 0px;
-    grid-template-columns: 7% 93%;
-    margin-top: 10px;
+    grid-template-columns: 33% 33% 33%;
     margin-bottom: 0px;
     padding-bottom: 0px;
-    grid-template-areas: "tel num" "sobre mail" "flecha ciudad"; }
-    footer .footer-grid .ft-grid-1 #tel-icono {
-      grid-area: tel; }
-    footer .footer-grid .ft-grid-1 #tel-enlace {
-      grid-area: num; }
-    footer .footer-grid .ft-grid-1 #mail-icono {
-      grid-area: sobre; }
-    footer .footer-grid .ft-grid-1 #mail-enlace {
-      grid-area: mail; }
-    footer .footer-grid .ft-grid-1 #map-icono {
-      grid-area: flecha; }
-    footer .footer-grid .ft-grid-1 #map-enlace {
-      grid-area: ciudad; }
-  footer .footer-grid .ft-grid-2 {
-    display: grid;
-    grid-gap: 0px;
-    grid-template-columns: 7% 93%;
-    margin-top: 0px;
-    margin-left: 60px;
-    padding: 0px;
-    margin-bottom: 0px;
-    padding-bottom: 0px;
-    grid-template-areas: "ig iglink" "fb fblink" "tw twlink" "lin linlink"; }
-    @media screen and (min-width: 320px) and (max-width: 768px) {
-      footer .footer-grid .ft-grid-2 {
-        margin-left: 0px; } }
-    footer .footer-grid .ft-grid-2 #insta-icono {
-      grid-area: ig; }
-    footer .footer-grid .ft-grid-2 #insta-enlace {
-      grid-area: iglink; }
-    footer .footer-grid .ft-grid-2 #fb-icono {
-      grid-area: fb; }
-    footer .footer-grid .ft-grid-2 #fb-enlace {
-      grid-area: fblink; }
-    footer .footer-grid .ft-grid-2 #tw-icono {
-      grid-area: tw; }
-    footer .footer-grid .ft-grid-2 #tw-enlace {
-      grid-area: twlink; }
-    footer .footer-grid .ft-grid-2 #lin-icono {
-      grid-area: lin; }
-    footer .footer-grid .ft-grid-2 #lin-enlace {
-      grid-area: linlink; }
-  footer .footer-grid .ft-redes {
-    margin-right: 0px;
-    padding-right: 0px;
-    margin-left: 0px; }
-  footer .footer-grid .ft-enlaces {
-    padding-right: 0px;
-    margin-right: 0px;
-    padding-left: 0px;
-    margin-left: 0px; }
-  footer .footer-grid .ft-redes-1 {
-    margin-right: 0px;
-    padding-right: 0px;
-    margin-left: 0px; }
-  footer .footer-grid .ft-enlaces-1 {
-    padding-left: 0px;
-    margin-right: 0px;
-    margin-left: 0px;
-    padding-right: 0px; }
-
-footer #derechos {
-  background-color: #dcebbf;
-  padding: 0px; }
-  footer #derechos #derechosP {
-    text-align: center;
-    font-size: 13px; }
+    grid-template-areas: "izquierda centro derecha"; }
+    @media screen and (min-width: 250px) and (max-width: 768px) {
+      footer .footer-grid {
+        grid-template-areas: "izquierda izquierda" "centro centro" "derecha derecha"; } }
+    footer .footer-grid #ft-izquierda {
+      grid-area: izquierda; }
+    footer .footer-grid #ft-centro {
+      grid-area: centro; }
+    footer .footer-grid #ft-derecha {
+      grid-area: derecha; }
+    footer .footer-grid #footerLogo {
+      height: 50px;
+      width: 200px;
+      margin-left: 80px;
+      margin-bottom: 0px;
+      margin-top: 2.5rem;
+      filter: invert(100%); }
+      @media screen and (min-width: 250px) and (max-width: 768px) {
+        footer .footer-grid #footerLogo {
+          display: none; } }
+    footer .footer-grid p, footer .footer-grid h3 {
+      font-size: 15px; }
+    footer .footer-grid h3 {
+      margin-left: 30px;
+      text-decoration: underline;
+      margin-top: 0px; }
+    footer .footer-grid .ft-grid-1 {
+      display: grid;
+      grid-gap: 0px;
+      grid-template-columns: 7% 93%;
+      margin-top: 10px;
+      margin-bottom: 0px;
+      padding-bottom: 0px;
+      grid-template-areas: "tel num" "sobre mail" "flecha ciudad"; }
+      footer .footer-grid .ft-grid-1 #tel-icono {
+        grid-area: tel; }
+      footer .footer-grid .ft-grid-1 #tel-enlace {
+        grid-area: num; }
+      footer .footer-grid .ft-grid-1 #mail-icono {
+        grid-area: sobre; }
+      footer .footer-grid .ft-grid-1 #mail-enlace {
+        grid-area: mail; }
+      footer .footer-grid .ft-grid-1 #map-icono {
+        grid-area: flecha; }
+      footer .footer-grid .ft-grid-1 #map-enlace {
+        grid-area: ciudad; }
+    footer .footer-grid .ft-grid-2 {
+      display: grid;
+      grid-gap: 0px;
+      grid-template-columns: 7% 93%;
+      margin-top: 0px;
+      margin-left: 30px;
+      padding: 0px;
+      margin-bottom: 0px;
+      padding-bottom: 0px;
+      grid-template-areas: "ig iglink" "fb fblink" "tw twlink" "lin linlink"; }
+      @media screen and (min-width: 250px) and (max-width: 768px) {
+        footer .footer-grid .ft-grid-2 {
+          margin-left: 0px; } }
+      footer .footer-grid .ft-grid-2 #insta-icono {
+        grid-area: ig; }
+      footer .footer-grid .ft-grid-2 #insta-enlace {
+        grid-area: iglink; }
+      footer .footer-grid .ft-grid-2 #fb-icono {
+        grid-area: fb; }
+      footer .footer-grid .ft-grid-2 #fb-enlace {
+        grid-area: fblink; }
+      footer .footer-grid .ft-grid-2 #tw-icono {
+        grid-area: tw; }
+      footer .footer-grid .ft-grid-2 #tw-enlace {
+        grid-area: twlink; }
+      footer .footer-grid .ft-grid-2 #lin-icono {
+        grid-area: lin; }
+      footer .footer-grid .ft-grid-2 #lin-enlace {
+        grid-area: linlink; }
+    footer .footer-grid .ft-redes {
+      margin-left: 0px;
+      padding-right: 0px;
+      margin-right: 0px; }
+    footer .footer-grid .ft-enlaces {
+      padding-right: 0px;
+      margin-right: 0px;
+      padding-left: 0px;
+      margin-left: 10px; }
+    footer .footer-grid .ft-redes-1 {
+      margin-left: 0px;
+      padding-right: 0px;
+      margin-right: 0px; }
+    footer .footer-grid .ft-enlaces-1 {
+      padding-left: 10px;
+      margin-right: 0px;
+      margin-left: 0px;
+      padding-right: 0px; }
+  footer #derechos {
+    background-color: #b2b2b2;
+    padding: 0px; }
+    footer #derechos #derechosP {
+      text-align: center;
+      font-size: 13px; }
 
 /*p{
    position: absolute;
