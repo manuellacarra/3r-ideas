@@ -31,8 +31,7 @@ header {
   left: 0;
   right: 0;
   top: 0;
-  padding: 2px;
-  margin-bottom: 50px;
+  padding: 20px;
   z-index: 999;
   background-color: white; }
   header #logo {
@@ -40,13 +39,14 @@ header {
     width: 170px;
     margin-left: 10px;
     margin-bottom: 0px;
-    margin-top: 0px; }
+    margin-top: 7px; }
+    header #logo :hover {
+      filter: invert(100%);
+      transform-origin: center;
+      transition: 300ms; }
   header .header-redes {
-    height: 25px;
-    width: 25px;
     margin-left: 0px;
     margin-right: 10px;
-    opacity: 40%;
     margin-bottom: 10px; }
 
 .flex-header {
@@ -75,13 +75,6 @@ header {
   @media (max-width: 992px) {
     #hero #hero .container {
       padding-top: 62px; } }
-  #hero h1 {
-    margin: 0;
-    font-size: 48px;
-    font-weight: 700;
-    line-height: 56px;
-    color: #fff;
-    font-family: "Poppins", sans-serif; }
   #hero h2 {
     color: #eee;
     margin: 10px 0 0 0;
@@ -133,15 +126,16 @@ header {
     margin-top: 20px; }
   .gridIndex #manosPlanta {
     height: auto;
-    width: 100%;
-    margin-left: 10px;
+    width: 80%;
+    margin-left: 100px;
     margin-bottom: 0px;
     position: relative; }
 
 .nuestrosServicios1 {
   background-color: #6f9c53;
   padding: 5px;
-  margin-top: 0px; }
+  margin-top: 0px;
+  text-align: center; }
   .nuestrosServicios1 #nuestrosServicios2 {
     color: white; }
 
@@ -149,8 +143,9 @@ header {
   display: grid;
   grid-gap: 0px;
   grid-template-columns: 33% 33% 33%;
-  margin-bottom: 0px;
   padding-top: 50px;
+  margin-left: 100px;
+  margin-right: 100px;
   text-align: center;
   justify-content: space-around;
   grid-template-areas: "izquierda centro derecha"; }
@@ -158,16 +153,15 @@ header {
     .gridIndexServicios {
       text-align: center;
       grid-template-areas: "izquierda izquierda izquierda" "centro centro centro" "derecha derecha derecha"; } }
-  .gridIndexServicios #gridIndexServiciosIzquierda {
+  .gridIndexServicios .gridIndexServiciosIzquierda {
     grid-area: izquierda; }
-  .gridIndexServicios #gridIndexServiciosCentro {
+  .gridIndexServicios .gridIndexServiciosCentro {
     grid-area: centro; }
-  .gridIndexServicios #gridIndexServiciosDerecha {
+  .gridIndexServicios .gridIndexServiciosDerecha {
     grid-area: derecha; }
   .gridIndexServicios .imagenesIndexServicios {
-    height: 100px;
-    width: 100px;
-    border-color: #dcebbf;
+    height: 80px;
+    width: 80px;
     margin-bottom: 10px; }
     .gridIndexServicios .imagenesIndexServicios :hover {
       transform: scale(1.1);
@@ -212,25 +206,29 @@ h2 {
 /*--------------------------------------------------------------
 # Nosotros
 --------------------------------------------------------------*/
-.nosotrosBackground {
+#nosotrosBackground {
   background: url("../images/estrategia-byw.jpg");
   background-size: cover;
   margin-top: 50px;
+  filter: opacity(70%);
   padding-bottom: 50px;
-  margin-bottom: 30px;
+  margin-bottom: 100px;
   padding-left: 20px; }
-  .nosotrosBackground .titulo, .nosotrosBackground .grid-contacto .elementos #contactanos, .grid-contacto .elementos .nosotrosBackground #contactanos, .nosotrosBackground .grid-contacto #seguinos, .grid-contacto .nosotrosBackground #seguinos {
-    font-family: "Poppins", sans-serif;
-    color: #b2b2b2;
-    font-size: 2.5rem; }
-  .nosotrosBackground #nosotros {
-    margin-bottom: 20px;
-    padding-top: 20px;
-    margin-top: 10px;
-    margin-left: 0px; }
-  .nosotrosBackground .parrafo, .nosotrosBackground #nosotrosParrafo {
-    font-size: 18px;
-    color: white; }
+
+.titulo, .grid-contacto .elementos #contactanos {
+  font-family: "Poppins", sans-serif;
+  color: black;
+  font-size: 2.5rem; }
+
+#nosotros {
+  margin-bottom: 20px;
+  padding-top: 20px;
+  margin-top: 100px;
+  margin-left: 20px; }
+
+.parrafo, #nosotrosParrafo {
+  font-size: 18px;
+  color: black; }
 
 .grid-nosotros {
   display: grid;
@@ -238,20 +236,25 @@ h2 {
   grid-template-columns: 50% 50%;
   justify-content: space-around;
   text-align: center;
-  background-color: #dcebbf;
-  padding-top: 50px;
-  margin-top: 20px;
+  margin-right: 100px;
+  margin-left: 100px;
+  margin-top: 70px;
   grid-template-areas: "izquierda derecha"; }
   @media screen and (min-width: 250px) and (max-width: 768px) {
     .grid-nosotros {
       grid-template-areas: "izquierda izquierda" "derecha derecha"; } }
   .grid-nosotros #nosotros-izquierda {
     grid-area: izquierda; }
+    .grid-nosotros #nosotros-izquierda h2 {
+      font-size: 25px; }
+    .grid-nosotros #nosotros-izquierda p {
+      font-size: 18px; }
   .grid-nosotros #nosotros-derecha {
     grid-area: derecha; }
-    .grid-nosotros #nosotros-derecha ul {
-      margin: 0px;
-      font-size: 15px; }
+    .grid-nosotros #nosotros-derecha h2 {
+      font-size: 25px; }
+    .grid-nosotros #nosotros-derecha p {
+      font-size: 18px; }
   .grid-nosotros .directores {
     height: 200px;
     width: 200px;
@@ -263,15 +266,95 @@ h2 {
 /*--------------------------------------------------------------
 # Servicios
 --------------------------------------------------------------*/
-#estrategiaYGestion {
-  background-color: #b2b2b2;
+#seccionEstrategia {
+  position: relative; }
+  #seccionEstrategia #estrategiaYGestion {
+    padding: 10px;
+    font-size: 25px;
+    margin-top: 70px;
+    margin-left: 200px;
+    font-family: 'Montserrat', sans-serif; }
+  #seccionEstrategia .grid-estrategia {
+    display: grid;
+    grid-gap: 0px;
+    justify-content: space-around;
+    grid-template-columns: 50% 50%;
+    align-items: center;
+    padding-top: 0px;
+    margin: 0px;
+    grid-template-areas: "izquierda derecha"; }
+    @media screen and (min-width: 250px) and (max-width: 768px) {
+      #seccionEstrategia .grid-estrategia {
+        grid-template-areas: "izquierda izquierda" "derecha derecha"; } }
+    #seccionEstrategia .grid-estrategia #grid-estrategia-izquierda {
+      grid-area: izquierda;
+      margin-left: 100px;
+      margin-bottom: 20px;
+      margin-top: 20px; }
+    #seccionEstrategia .grid-estrategia #grid-estrategia-derecha {
+      grid-area: derecha;
+      margin-right: 100px; }
+      #seccionEstrategia .grid-estrategia #grid-estrategia-derecha ul {
+        margin-left: 0px; }
+        #seccionEstrategia .grid-estrategia #grid-estrategia-derecha ul li {
+          font-size: 1rem; }
+
+#seccionCapacitaciones {
+  position: relative; }
+  #seccionCapacitaciones .flex-rama {
+    display: flex;
+    justify-content: space-between;
+    margin: 0px;
+    padding: 0px;
+    align-items: center; }
+    #seccionCapacitaciones .flex-rama #branch {
+      height: 200px;
+      width: 400px;
+      margin: 0px;
+      padding: 0px; }
+      @media screen and (min-width: 250px) and (max-width: 768px) {
+        #seccionCapacitaciones .flex-rama #branch {
+          display: none; } }
+    #seccionCapacitaciones .flex-rama #capacitaciones {
+      font-size: 25px;
+      margin-top: 70px;
+      margin-right: 300px;
+      font-family: 'Montserrat', sans-serif; }
+  #seccionCapacitaciones .grid-capacitaciones {
+    display: grid;
+    grid-gap: 0px;
+    justify-content: space-around;
+    grid-template-columns: 50% 50%;
+    align-items: center;
+    padding-top: 10px;
+    margin: 0px;
+    grid-template-areas: "izquierda derecha"; }
+    @media screen and (min-width: 250px) and (max-width: 768px) {
+      #seccionCapacitaciones .grid-capacitaciones {
+        align-content: center;
+        grid-template-areas: "derecha derecha" "izquierda izquierda"; } }
+    #seccionCapacitaciones .grid-capacitaciones #grid-capacitaciones-izquierda {
+      grid-area: izquierda;
+      margin-left: 100px; }
+      #seccionCapacitaciones .grid-capacitaciones #grid-capacitaciones-izquierda ul {
+        margin-left: 0px; }
+        #seccionCapacitaciones .grid-capacitaciones #grid-capacitaciones-izquierda ul li {
+          font-size: 1rem; }
+    #seccionCapacitaciones .grid-capacitaciones #grid-capacitaciones-derecha {
+      grid-area: derecha;
+      margin-right: 100px;
+      margin-bottom: 20px;
+      margin-top: 0px; }
+
+#seccionComunicacion #comunicacionDeImpacto {
   padding: 10px;
   font-size: 25px;
-  margin: 0px;
-  padding-left: 100px;
-  color: white; }
+  margin-top: 70px;
+  padding-left: 200px;
+  color: black;
+  font-family: 'Montserrat', sans-serif; }
 
-.grid-estrategia {
+#seccionComunicacion .grid-comunicacion {
   display: grid;
   grid-gap: 0px;
   justify-content: space-around;
@@ -281,97 +364,26 @@ h2 {
   margin: 0px;
   grid-template-areas: "izquierda derecha"; }
   @media screen and (min-width: 250px) and (max-width: 768px) {
-    .grid-estrategia {
-      grid-template-areas: "izquierda izquierda" "derecha derecha"; } }
-  .grid-estrategia #grid-estrategia-izquierda {
-    grid-area: izquierda;
-    margin-left: 20px;
-    margin-bottom: 20px;
-    margin-top: 20px; }
-  .grid-estrategia #grid-estrategia-derecha {
-    grid-area: derecha;
-    margin-left: 15px; }
-    .grid-estrategia #grid-estrategia-derecha ul {
-      margin-left: 0px; }
-      .grid-estrategia #grid-estrategia-derecha ul li {
-        font-size: 1rem; }
-
-#capacitaciones {
-  background-color: #dcebbf;
-  padding: 10px;
-  font-size: 25px;
-  margin: 0px;
-  padding-right: 150px;
-  text-align: right;
-  color: grey; }
-
-.grid-capacitaciones {
-  display: grid;
-  grid-gap: 0px;
-  justify-content: space-around;
-  grid-template-columns: 50% 50%;
-  align-items: center;
-  padding-top: 10px;
-  background-color: #6f9c53;
-  margin: 0px;
-  grid-template-areas: "izquierda derecha"; }
-  @media screen and (min-width: 250px) and (max-width: 768px) {
-    .grid-capacitaciones {
+    #seccionComunicacion .grid-comunicacion {
       align-content: center;
-      grid-template-areas: "derecha derecha" "izquierda izquierda"; } }
-  .grid-capacitaciones #grid-capacitaciones-izquierda {
-    grid-area: izquierda;
-    margin-right: 15px; }
-    .grid-capacitaciones #grid-capacitaciones-izquierda ul {
-      margin-left: 0px; }
-      .grid-capacitaciones #grid-capacitaciones-izquierda ul li {
-        font-size: 1rem; }
-  .grid-capacitaciones #grid-capacitaciones-derecha {
-    grid-area: derecha;
-    margin-right: 20px;
-    margin-bottom: 20px;
-    margin-top: 20px; }
-
-#comunicacionDeImpacto {
-  background-color: #b2b2b2;
-  padding: 10px;
-  font-size: 25px;
-  margin: 0px;
-  padding-left: 100px;
-  color: black; }
-
-.grid-comunicacion {
-  display: grid;
-  grid-gap: 0px;
-  justify-content: space-around;
-  grid-template-columns: 50% 50%;
-  align-items: center;
-  padding-top: 10px;
-  margin: 0px;
-  background-color: #dcebbf;
-  grid-template-areas: "izquierda derecha"; }
-  @media screen and (min-width: 250px) and (max-width: 768px) {
-    .grid-comunicacion {
-      align-content: center;
       grid-template-areas: "izquierda izquierda" "derecha derecha"; } }
-  .grid-comunicacion #grid-comunicacion-izquierda {
+  #seccionComunicacion .grid-comunicacion #grid-comunicacion-izquierda {
     grid-area: izquierda;
-    margin-left: 20px;
+    margin-left: 100px;
     margin-bottom: 20px;
-    margin-top: 20px; }
-  .grid-comunicacion #grid-comunicacion-derecha {
+    margin-top: 0px; }
+  #seccionComunicacion .grid-comunicacion #grid-comunicacion-derecha {
     grid-area: derecha;
-    margin-left: 15px; }
-    .grid-comunicacion #grid-comunicacion-derecha ul {
+    margin-right: 100px; }
+    #seccionComunicacion .grid-comunicacion #grid-comunicacion-derecha ul {
       margin-left: 0px; }
-      .grid-comunicacion #grid-comunicacion-derecha ul li {
+      #seccionComunicacion .grid-comunicacion #grid-comunicacion-derecha ul li {
         font-size: 1rem; }
 
 .fotos-servicios {
   height: auto;
-  width: 100%;
-  position: relative;
-  max-width: 100%; }
+  width: 65%;
+  position: relative; }
 
 /*--------------------------------------------------------------
 # Formulario
@@ -389,7 +401,6 @@ h2 {
       grid-template-areas: "izquierda izquierda" "derecha derecha"; } }
   .grid-contacto #izquierda {
     grid-area: izquierda;
-    background-color: #6f9c53;
     padding: 20px;
     padding-bottom: 0px; }
   .grid-contacto #derecha {
@@ -429,14 +440,9 @@ h2 {
     transform-origin: center;
     transition: 300ms;
     filter: invert(100%); }
-  .grid-contacto #seguinos {
-    margin-top: 0%;
-    padding-top: 0px;
-    font-size: 2rem;
-    margin: 0px; }
   .grid-contacto .gridContactoIcons {
     display: grid;
-    grid-gap: 40px;
+    grid-gap: 10px;
     grid-template-columns: 7% 93%;
     margin-top: 20px;
     margin-bottom: 0px;
@@ -456,7 +462,7 @@ h2 {
     .grid-contacto .gridContactoIcons #map-enlace-contacto {
       grid-area: ciudad; }
     .grid-contacto .gridContactoIcons p {
-      font-size: 1.5rem; }
+      font-size: 20px; }
   .grid-contacto .flexRedesContacto {
     display: flex;
     flex-direction: row;
@@ -482,13 +488,14 @@ h2 {
 # Footer
 --------------------------------------------------------------*/
 footer {
-  padding-bottom: 0px; }
+  padding: 0px; }
   footer .footer-grid {
     display: grid;
     grid-gap: 0px;
     grid-template-columns: 33% 33% 33%;
     margin-bottom: 0px;
     padding-bottom: 0px;
+    padding-top: 20px;
     grid-template-areas: "izquierda centro derecha"; }
     @media screen and (min-width: 250px) and (max-width: 768px) {
       footer .footer-grid {
@@ -502,7 +509,7 @@ footer {
     footer .footer-grid #footerLogo {
       height: 50px;
       width: 200px;
-      margin-left: 80px;
+      margin-left: 130px;
       margin-bottom: 0px;
       margin-top: 2.5rem;
       filter: invert(100%); }
@@ -512,16 +519,17 @@ footer {
     footer .footer-grid p, footer .footer-grid h3 {
       font-size: 15px; }
     footer .footer-grid h3 {
-      margin-left: 30px;
-      text-decoration: underline;
-      margin-top: 0px; }
+      margin-left: 35px;
+      margin-top: 0px;
+      margin-bottom: 10px; }
     footer .footer-grid .ft-grid-1 {
       display: grid;
       grid-gap: 0px;
       grid-template-columns: 7% 93%;
       margin-top: 10px;
       margin-bottom: 0px;
-      padding-bottom: 0px;
+      margin-left: 0px;
+      margin-right: 0px;
       grid-template-areas: "tel num" "sobre mail" "flecha ciudad"; }
       footer .footer-grid .ft-grid-1 #tel-icono {
         grid-area: tel; }
@@ -540,7 +548,7 @@ footer {
       grid-gap: 0px;
       grid-template-columns: 7% 93%;
       margin-top: 0px;
-      margin-left: 30px;
+      margin-left: 10px;
       padding: 0px;
       margin-bottom: 0px;
       padding-bottom: 0px;
