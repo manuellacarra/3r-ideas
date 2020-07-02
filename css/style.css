@@ -273,7 +273,7 @@ ul {
       .nosotros-content .grid-parrafo #p-derecha .trabajamos {
         font-size: 20px;
         color: #6f9c53;
-        font-weight: 500; }
+        font-weight: 600; }
 
 .grid-nosotros {
   display: grid;
@@ -602,7 +602,7 @@ ul {
 --------------------------------------------------------------*/
 footer {
   padding: 0px;
-  background-color: #6f9c53;
+  background-color: #848484;
   margin-top: 0px; }
   footer .footer-grid {
     display: grid;
