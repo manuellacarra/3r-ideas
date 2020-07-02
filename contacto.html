@@ -51,13 +51,18 @@
   </header>
 	<section>
 		<div class="grid-contacto container-md">
-			<div class="elementos" id="derecha">
-				<h1 id="contactanos"><strong>Contactanos</strong></h1>
+			<div class="elementos" id="derecha">		
 				<form action="#" method="post">	
-					<input class="formulario" placeholder="Nombre y Apellido" type="Text" name="Name" required>				
-					<input class="formulario" placeholder="Email" type="email" name="mail" required>
-					<input class="formulario" type="Text" name="subject" placeholder="Asunto">	
-					<textarea id="comentario" name="comments" placeholder="Mensaje" class="formulario" required></textarea>
+          <label class="formulario label">Nombre y Apellido <strong>*</strong></label>
+					<input class="formulario" type="Text" name="Name" required>
+          <label class="formulario label">Email <strong>*</strong></label>
+					<input class="formulario" type="email" name="mail" required>
+          <label class="formulario label flexOpcional">Organización <p class="text-muted">(opcional)</p></label> 
+          <input class="formulario" type="Text" name="organization">
+          <label class="formulario label flexOpcional">Asunto <p class="text-muted">(opcional)</p></label>   
+					<input class="formulario" type="Text" name="subject">
+          <label class="formulario label">Mensaje <strong>*</strong></label>
+					<textarea id="comentario" name="comments" placeholder="" class="formulario" required></textarea>
 					<div>
 						<button class="boton formulario btn btn-light border border-dark w-25 p-2" data-toggle="modal" data-target="#exampleModal" role="button" type="button submit">Enviar</button>
 							<div class="modal fade" id="exampleModal" tabindex="-1" role="dialog" aria-labelledby="exampleModalLabel" aria-hidden="true">
@@ -76,18 +81,20 @@
       									<div class="modal-footer">
         									<button type="button" class="btn btn-primary" data-dismiss="modal">Cerrar</button>
       									</div>
-   				 					</div>
+   									</div>
   								</div>
 							</div>
-						<button class="formulario btn btn-dark w-25 p-2 boton" type="Reset">Limpiar</button>
-					</div>
-	    	</form>			
-	    </div>
-	    <div class="elementos" id="izquierda">
+          </div>
+        </form>		
+      </div> 
+	    <div class="elementos" id="izquierda">   
+        <p id="hablemos"><strong>Hablemos. Dejanos tu consulta y comencemos el diálogo. Estaremos felices de escucharte.</strong></p>
+        <h2><strong>3R IDEAS</strong></h2>
+        <h3 class="titulo-contacto-izquierda text-muted">Sustentabilidad y Comunicación</h3>
         <div class="gridContactoIcons">
-          <i class="fas fa-phone-alt fa-2x" id="tel-icono-contacto"></i><p id="tel-enlace-contacto">+54 911 6141-4804</p>
-          <i class="fas fa-envelope fa-2x" id="mail-icono-contacto"></i><p id="mail-enlace-contacto">hola@3rideas.com</p>
-          <i class="fas fa-map-marker-alt fa-2x" id="map-icono-contacto"></i><p id="map-enlace-contacto">Ciudad Autónoma de Buenos Aires | Argentina </p>
+          <i class="fas fa-phone-alt fa-lg" id="tel-icono-contacto"></i><p id="tel-enlace-contacto">+54 911 6141-4804</p>
+          <i class="fas fa-envelope fa-lg" id="mail-icono-contacto"></i><p id="mail-enlace-contacto">hola@3rideas.com</p>
+          <i class="fas fa-map-marker-alt fa-lg" id="map-icono-contacto"></i><p id="map-enlace-contacto">Ciudad Autónoma de Buenos Aires | Argentina </p>
         </div>
         <div class="flexRedesContacto">
           <a href="https://www.instagram.com/3rideas_/"><i class="fab fa-instagram fa-2x text-dark redesContacto"></i></a>
@@ -98,7 +105,7 @@
       </div>
     </div>
 	</section>
-	<footer class="bg-dark">
+	<footer>
 		<div class="container footer-grid">
       <div id="ft-izquierda">
         <img src="images/3R-IDEAS.png" id="footerLogo"> 
@@ -121,7 +128,7 @@
       </div>     
     </div>     	
     <div id="derechos">
-			<p class="text-dark text-center" id="derechosP">Todos los derechos reservados &copy; 2020. Diseñado por <strong>Manuel Lacarra</strong></p>
+			<p class="text-dark text-center" id="derechosP"> &copy; Copyright 2020 3R IDEAS I Todos los derechos reservados I Diseño y desarrollo <strong>Manuel Lacarra</strong></p>
 		</div>				  
 	</footer>
 	<script src="https://code.jquery.com/jquery-3.5.1.slim.min.js" integrity="sha384-DfXdz2htPH0lsSSs5nCTpuj/zy4C+OGpamoFVy38MVBnE+IbbVYUew+OrCXaRkfj" crossorigin="anonymous"></script>
