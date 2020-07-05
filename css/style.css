@@ -55,78 +55,93 @@ header {
   display: flex;
   justify-content: space-between; }
 
+#instagram {
+  margin-left: 25px; }
+  @media screen and (min-width: 250px) and (max-width: 768px) {
+    #instagram {
+      margin-left: 0px; } }
+
 /*--------------------------------------------------------------
 # index 1
 --------------------------------------------------------------*/
 .inicio {
   margin-top: 100px; }
 
-#hero {
-  width: 100%;
-  height: 60vh;
-  background: url("../images/green-desk.jpg") top center;
-  background-size: cover;
-  position: relative; }
-  #hero #hero:before {
-    content: "";
-    background: rgba(0, 0, 0, 0.4);
-    position: absolute;
-    bottom: 0;
-    top: 0;
-    left: 0;
-    right: 0; }
-  #hero .container {
-    padding-top: 0px; }
-  #hero .frase-inicio {
+.carousel .carousel-inner {
+  height: 75vh; }
+  .carousel .carousel-inner .carousel-item img {
+    position: relative;
+    width: 100%;
+    height: 600px; }
+
+.carousel-caption {
+  z-index: 10;
+  position: relative;
+  width: 50%;
+  align-items: left;
+  right: 15%;
+  bottom: 20px;
+  left: 0px; }
+
+.carousel-frase {
+  padding-top: 20px;
+  padding-bottom: 20px;
+  color: #fff;
+  margin-bottom: 250px;
+  align-items: left; }
+  .carousel-frase p {
+    font-family: 'Montserrat', sans-serif;
+    font-size: 2rem;
+    margin-left: 0px;
+    padding-right: 30px;
+    margin-right: 0px;
+    padding-left: 50px;
+    padding-bottom: 1rem;
+    padding-top: 1rem;
+    margin-bottom: 0px;
+    font-weight: 400;
     background-color: white;
     background: rgba(255, 255, 255, 0.3);
     margin-left: 0px;
-    width: 50%; }
-    #hero .frase-inicio p {
-      font-size: 1.5rem;
-      color: white;
-      margin-left: 0px;
-      padding-right: 30px;
-      margin-right: 0px;
-      padding-left: 30px;
-      text-align: left;
-      padding-bottom: 1rem;
-      padding-top: 1rem;
-      margin-bottom: 0px; }
-  @media (max-width: 992px) {
-    #hero #hero .container {
-      padding-top: 62px; } }
+    text-align: left;
+    margin-bottom: 0px; }
+
+/*.carousel-frase{
+   
+  
+  
+}
+
+#hero {
+  background: url("../images/hands-plant2.jpg"); background-position: center; background-size: cover;
+   position: relative; padding-top: 300px; padding-bottom: 330px; height: 60vh; width: 100%;
+  
+  #hero:before {
+  	content: ""; background: rgba(0, 0, 0, 0.4); position: absolute; bottom: 0; top: 0; left: 0; right: 0;
+	}
+	.container {
+  		padding-top: 0px; 
+	}
+  .frase-inicio{
+        
+  }*/
+@media (max-width: 992px) {
+  #hero .container {
+    padding-top: 62px; } }
+
+@media (min-width: 1024px) {
+  #hero {
+    background-attachment: fixed; } }
+
+@media (max-width: 768px) {
+  #hero {
+    height: 100vh; }
+  #hero h1 {
+    font-size: 28px;
+    line-height: 36px; }
   #hero h2 {
-    color: #eee;
-    margin: 10px 0 0 0;
-    font-size: 24px; }
-  #hero .btn-get-started {
-    font-family: 'Montserrat', sans-serif;
-    font-weight: 500;
-    font-size: 15px;
-    letter-spacing: 1px;
-    display: inline-block;
-    padding: 10px 35px;
-    border-radius: 50px;
-    transition: 0.5s;
-    margin-top: 30px;
-    border: 2px solid #fff;
-    color: #fff; }
-  #hero .btn-get-started:hover {
-    background: black;
-    border: 2px solid black; }
-  @media (min-width: 1024px) {
-    #hero #hero {
-      background-attachment: fixed; } }
-  @media (max-width: 768px) {
-    #hero #hero {
-      height: 100vh; }
-    #hero #hero h1 {
-      font-size: 28px;
-      line-height: 36px; }
-    #hero #hero h2 {
-      font-size: 18px;
-      line-height: 24px; } }
+    font-size: 18px;
+    line-height: 24px; } }
 
 section {
   padding-bottom: 0px;
@@ -148,11 +163,18 @@ section {
       grid-template-areas: "izquierda izquierda" "derecha derecha"; } }
   .gridIndex #indexIzquierda {
     grid-area: izquierda; }
+    @media screen and (min-width: 250px) and (max-width: 768px) {
+      .gridIndex #indexIzquierda {
+        margin-left: 0px;
+        margin-right: 100px; } }
   .gridIndex #indexDerecha {
     grid-area: derecha;
     margin-left: 10px;
     margin-top: 20px;
     margin-right: 100px; }
+    @media screen and (min-width: 250px) and (max-width: 768px) {
+      .gridIndex #indexDerecha {
+        margin-left: 100px; } }
   .gridIndex #manosPlanta {
     height: auto;
     width: 80%;
@@ -172,7 +194,13 @@ section {
 
 #creamos {
   margin-left: 100px;
-  margin-top: 10px; }
+  margin-top: 0px;
+  width: 40%; }
+  @media screen and (min-width: 250px) and (max-width: 768px) {
+    #creamos {
+      width: auto;
+      margin-left: 100px;
+      margin-right: 100px; } }
 
 .gridIndexServicios {
   display: grid;
@@ -186,6 +214,7 @@ section {
   grid-template-areas: "izquierda centro derecha"; }
   @media screen and (min-width: 250px) and (max-width: 768px) {
     .gridIndexServicios {
+      margin-bottom: 60px;
       text-align: center;
       grid-template-areas: "izquierda izquierda izquierda" "centro centro centro" "derecha derecha derecha"; } }
   .gridIndexServicios .gridIndexServiciosIzquierda {
@@ -199,11 +228,11 @@ section {
     width: 80px;
     margin-bottom: 10px; }
   .gridIndexServicios .tituloIndexServicios {
-    font-size: 1.3rem; }
+    font-size: 1.3rem;
+    margin-top: 10px; }
   .gridIndexServicios .parrafoIndexServicios {
-    font-size: 1rem; }
-  .gridIndexServicios #comu-impacto {
-    margin-top: 25px; }
+    font-size: 1rem;
+    margin-top: 10px; }
 
 /*--------------------------------------------------------------
 # General
@@ -242,7 +271,7 @@ ul {
 .nosotros-content {
   padding-top: 5px; }
   .nosotros-content #nosotros {
-    margin-bottom: 20px;
+    margin-bottom: 40px;
     padding-top: 0px;
     margin-top: 0px;
     margin-left: 100px; }
@@ -257,6 +286,7 @@ ul {
     grid-template-areas: "izquierda  derecha"; }
     @media screen and (min-width: 250px) and (max-width: 768px) {
       .nosotros-content .grid-parrafo {
+        grid-gap: 0%;
         grid-template-areas: "izquierda izquierda" "derecha derecha"; } }
     .nosotros-content .grid-parrafo #p-izquierda {
       grid-area: izquierda; }
@@ -329,7 +359,7 @@ ul {
   margin-top: 100px;
   align-content: center; }
 
-.gridIndexServicios {
+.gridIndexServicios1 {
   display: grid;
   grid-gap: 5%;
   grid-template-columns: 25% 25% 25%;
@@ -341,21 +371,28 @@ ul {
   justify-content: space-around;
   grid-template-areas: "izquierda centro derecha"; }
   @media screen and (min-width: 250px) and (max-width: 768px) {
-    .gridIndexServicios {
+    .gridIndexServicios1 {
       text-align: center;
       grid-template-areas: "izquierda izquierda izquierda" "centro centro centro" "derecha derecha derecha"; } }
-  .gridIndexServicios .gridIndexServiciosIzquierda {
+  .gridIndexServicios1 .gridIndexServiciosIzquierda1 {
     grid-area: izquierda; }
-  .gridIndexServicios .gridIndexServiciosCentro {
+  .gridIndexServicios1 .gridIndexServiciosCentro1 {
     grid-area: centro; }
-  .gridIndexServicios .gridIndexServiciosDerecha {
-    grid-area: derecha;
-    margin-top: -25px; }
-  .gridIndexServicios .imagenesIndexServicios {
+  .gridIndexServicios1 .gridIndexServiciosDerecha1 {
+    grid-area: derecha; }
+  .gridIndexServicios1 .imagenesIndexServicios1 {
     height: 80px;
-    width: 80px; }
-  .gridIndexServicios .tituloIndexServicios {
-    font-size: 1.3rem; }
+    width: 80px;
+    margin-top: 35px;
+    margin-bottom: 1rem; }
+  .gridIndexServicios1 .imagenesIndexServicios2 {
+    height: 80px;
+    width: 80px;
+    margin-top: 10px;
+    margin-bottom: 1rem; }
+  .gridIndexServicios1 .tituloIndexServicios1 {
+    font-size: 1.3rem;
+    margin-top: 1rem; }
 
 #seccionEstrategia {
   position: relative; }
@@ -363,11 +400,11 @@ ul {
     padding: 10px;
     font-size: 25px;
     margin-top: 50px;
-    padding-left: 150px;
+    padding-left: 145px;
     font-family: 'Montserrat', sans-serif;
     color: white;
     font-weight: 300;
-    background-color: #b2b2b2;
+    background-color: #848484;
     margin-bottom: 1rem; }
   #seccionEstrategia .grid-estrategia {
     display: grid;
@@ -389,6 +426,9 @@ ul {
       grid-area: derecha;
       margin-right: 100px;
       margin-top: 20px; }
+      @media screen and (min-width: 250px) and (max-width: 768px) {
+        #seccionEstrategia .grid-estrategia #grid-estrategia-derecha {
+          margin-left: 100px; } }
       #seccionEstrategia .grid-estrategia #grid-estrategia-derecha ul {
         margin-left: 0px; }
         #seccionEstrategia .grid-estrategia #grid-estrategia-derecha ul li {
@@ -398,16 +438,20 @@ ul {
   position: relative; }
   #seccionCapacitaciones #capacitaciones {
     font-size: 25px;
-    margin-top: 70px;
+    margin-top: 55px;
     padding: 10px;
-    padding-right: 350px;
+    padding-right: 355px;
     font-family: 'Montserrat', sans-serif;
     color: white;
     margin-bottom: 1rem;
     font-weight: 300;
-    background-color: #b2b2b2;
+    background-color: #848484;
     margin-bottom: 1rem;
-    text-align: right; }
+    text-align: right;
+    position: relative; }
+    @media screen and (min-width: 250px) and (max-width: 768px) {
+      #seccionCapacitaciones #capacitaciones {
+        padding-left: 170px; } }
   #seccionCapacitaciones .grid-capacitaciones {
     display: grid;
     grid-gap: 0px;
@@ -424,6 +468,9 @@ ul {
     #seccionCapacitaciones .grid-capacitaciones #grid-capacitaciones-izquierda {
       grid-area: izquierda;
       margin-left: 100px; }
+      @media screen and (min-width: 250px) and (max-width: 768px) {
+        #seccionCapacitaciones .grid-capacitaciones #grid-capacitaciones-izquierda {
+          margin-right: 100px; } }
       #seccionCapacitaciones .grid-capacitaciones #grid-capacitaciones-izquierda ul {
         margin-left: 0px; }
         #seccionCapacitaciones .grid-capacitaciones #grid-capacitaciones-izquierda ul li {
@@ -434,17 +481,24 @@ ul {
       margin-bottom: 20px;
       margin-top: 0px;
       margin-left: 50px; }
+      @media screen and (min-width: 250px) and (max-width: 768px) {
+        #seccionCapacitaciones .grid-capacitaciones #grid-capacitaciones-derecha {
+          margin-left: 100px;
+          margin-bottom: 40px; } }
 
 #seccionComunicacion #comunicacionDeImpacto {
   padding: 10px;
   font-size: 25px;
-  margin-top: 70px;
-  padding-left: 150px;
+  margin-top: 55px;
+  padding-left: 140px;
   color: white;
   font-family: 'Montserrat', sans-serif;
   font-weight: 300;
-  background-color: #b2b2b2;
-  margin-bottom: 1rem; }
+  background-color: #848484;
+  padding-bottom: 1rem; }
+  @media screen and (min-width: 250px) and (max-width: 768px) {
+    #seccionComunicacion #comunicacionDeImpacto {
+      padding-left: 100px; } }
 
 #seccionComunicacion .grid-comunicacion {
   display: grid;
@@ -471,6 +525,9 @@ ul {
     grid-area: derecha;
     margin-right: 100px;
     margin-top: 20px; }
+    @media screen and (min-width: 250px) and (max-width: 768px) {
+      #seccionComunicacion .grid-comunicacion #grid-comunicacion-derecha {
+        margin-left: 100px; } }
     #seccionComunicacion .grid-comunicacion #grid-comunicacion-derecha ul {
       margin-left: 0px; }
       #seccionComunicacion .grid-comunicacion #grid-comunicacion-derecha ul li {
@@ -480,6 +537,32 @@ ul {
   height: auto;
   width: 65%;
   position: relative; }
+
+.consultanos {
+  font-family: 'Montserrat', sans-serif;
+  text-align: right;
+  margin-right: 545px;
+  margin-left: 100px;
+  margin-top: 20px;
+  padding-bottom: 1rem; }
+  .consultanos button {
+    background-color: #dcebbf; }
+  .consultanos button:hover {
+    transform: scale(1.1);
+    transform-origin: center;
+    transition: 300ms; }
+
+.consultanos2 {
+  font-family: 'Montserrat', sans-serif;
+  margin-left: 100px;
+  margin-top: 0px;
+  padding-bottom: 1rem; }
+  .consultanos2 button {
+    background-color: #dcebbf; }
+  .consultanos2 button:hover {
+    transform: scale(1.1);
+    transform-origin: center;
+    transition: 300ms; }
 
 /*--------------------------------------------------------------
 # Formulario
@@ -546,6 +629,8 @@ ul {
     margin-bottom: 0px;
     padding-bottom: 0px;
     height: 27px; }
+  .grid-contacto form .boton {
+    font-family: 'Montserrat', sans-serif; }
   .grid-contacto form .boton:hover {
     transform: scale(1.1);
     transform-origin: center;
@@ -602,7 +687,7 @@ ul {
 --------------------------------------------------------------*/
 footer {
   padding: 0px;
-  background-color: #848484;
+  background-color: #6f9c53;
   margin-top: 0px; }
   footer .footer-grid {
     display: grid;
@@ -623,6 +708,9 @@ footer {
     footer .footer-grid #ft-derecha {
       grid-area: derecha;
       margin-left: 30px; }
+      @media screen and (min-width: 250px) and (max-width: 768px) {
+        footer .footer-grid #ft-derecha {
+          margin-left: 0px; } }
     footer .footer-grid #footerLogo {
       height: 50px;
       width: 200px;
@@ -672,9 +760,6 @@ footer {
       margin-bottom: 0px;
       padding-bottom: 0px;
       grid-template-areas: "ig iglink" "fb fblink" "tw twlink" "lin linlink"; }
-      @media screen and (min-width: 250px) and (max-width: 768px) {
-        footer .footer-grid .ft-grid-2 {
-          margin-left: 0px; } }
       footer .footer-grid .ft-grid-2 #insta-icono {
         grid-area: ig; }
       footer .footer-grid .ft-grid-2 #insta-enlace {
@@ -691,6 +776,9 @@ footer {
         grid-area: lin; }
       footer .footer-grid .ft-grid-2 #lin-enlace {
         grid-area: linlink; }
+      @media screen and (min-width: 250px) and (max-width: 768px) {
+        footer .footer-grid .ft-grid-2 {
+          margin-left: 0px; } }
     footer .footer-grid .ft-redes {
       margin-left: 0px;
       padding-right: 0px;

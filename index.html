@@ -16,65 +16,79 @@
   <script src="https://kit.fontawesome.com/95df101b02.js" crossorigin="anonymous"></script>	
 </head>
 <body>	
-	<header class="flex-header">			 
-		<a href="index.html"><img src="images/3R-IDEAS.png" alt="3R" id="logo"></a> 
-		<nav class="navbar navbar-expand-lg navbar-light">
-		  <a class="navbar-brand" href="#"></a>
-  		<button class="navbar-toggler" type="button" data-toggle="collapse" data-target="#navbarSupportedContent" aria-controls="navbarSupportedContent" aria-expanded="false" aria-label="Toggle navigation">
-    			<span class="navbar-toggler-icon"></span>
-  		</button>
-  			<div class="collapse navbar-collapse" id="navbarSupportedContent">
-    			<ul class="navbar-nav mr-auto align-items-center">
-      			<li class="nav-item active">
-        			<a class="nav-link" href="index.html">Home<span class="sr-only">(current)</span></a>
-      			</li>
-      			<li class="nav-item">
-      				<a class="nav-link" href="nosotros.html">Quiénes somos</a>
-    				</li>
-    				<li class="nav-item">
-      				<a class="nav-link" href="servicios.html">Servicios</a>
-        		</li>	
-        		<li class="nav-item">
-        			<a class="nav-link" href="contacto.html">Contacto</a>
-        		</li>
-            <li class="nav-item">
-              <a href="https://www.instagram.com/3rideas_/"><i class="fab fa-instagram text-secondary fa-lg header-redes ml-4"></i></a>
-            </li>
-            <li class="nav-item">
-              <a href="https://es-es.facebook.com/3RIDEAS"><i class="fab fa-facebook-square text-secondary fa-lg header-redes"></i></a>
-            </li>
-            <li class="nav-item">
-              <a href="https://twitter.com/3rideas"><i class="fab fa-twitter-square text-secondary fa-lg header-redes"></i></a>
-            </li>
-            <li class="nav-item">
-              <a href="https://www.linkedin.com/company/3r-ideas"><i class="fab fa-linkedin text-secondary fa-lg header-redes"></i></a>
-            </li>
+  <header class="flex-header">
+    <a href="index.html"><img src="images/3R-IDEAS.png" alt="3R" id="logo"></a> 
+    <nav class="navbar navbar-expand-lg navbar-light">
+      <a class="navbar-brand" href="#"></a>
+        <button class="navbar-toggler" type="button" data-toggle="collapse" data-target="#navbarSupportedContent" aria-controls="navbarSupportedContent" aria-expanded="false" aria-label="Toggle navigation">
+          <span class="navbar-toggler-icon"></span>
+        </button>
+        <div class="collapse navbar-collapse" id="navbarSupportedContent">
+          <ul class="navbar-nav mr-auto align-items-center">
+              <li class="nav-item active">
+                <a class="nav-link" href="index.html">Home</a>
+              </li>
+              <li class="nav-item">
+                <a class="nav-link" href="nosotros.html">Quiénes somos</a>
+              </li>
+              <li class="nav-item">
+                <a class="nav-link" href="servicios.html">Servicios</a>
+              </li> 
+              <li class="nav-item">
+                <a class="nav-link" href="contacto.html">Contacto</a>
+              </li>
+              <li class="nav-item">
+                <a href="https://www.instagram.com/3rideas_/" class="nav-link"><i class="fab fa-instagram text-secondary fa-lg header-redes" id="instagram"></i></a>
+              </li>
+              <li class="nav-item">
+                <a href="https://es-es.facebook.com/3RIDEAS" class="nav-link"><i class="fab fa-facebook-square text-secondary fa-lg header-redes"></i></a>
+              </li>
+              <li class="nav-item">
+                <a href="https://twitter.com/3rideas" class="nav-link"><i class="fab fa-twitter-square text-secondary fa-lg header-redes"></i></a>
+              </li>
+              <li class="nav-item">
+                <a href="https://www.linkedin.com/company/3r-ideas" class="nav-link"><i class="fab fa-linkedin text-secondary fa-lg header-redes"></i></a>
+              </li>
           </ul>
-			</div>
-		</nav>		    			       	         
-	</header>
-  <div class="inicio">
-    <section id="hero" class="d-flex justify-content-center align-items-center">
-      <div class="container position-relative frase-inicio" data-aos="zoom-in" data-aos-delay="100">   
-        <p>Acompañamos a las organizaciones a <strong>REPENSAR</strong><br> sus procesos en cada una de las etapas de su <br>cadena de valor para <strong>REDUCIR</strong> su impacto ambiental.</p>            
       </div>
-    </section>
-  </div>
+    </nav>           
+  </header>	
+  <div class="inicio">
+    <div id="carouselExampleIndicators" class="carousel slide" data-ride="carousel">
+      <ol class="carousel-indicators">
+        <li data-target="#carouselExampleIndicators" data-slide-to="0" class="active"></li>
+        <li data-target="#carouselExampleIndicators" data-slide-to="1"></li>
+      </ol>
+      <div class="carousel-inner">
+        <div class="carousel-item active carouselFotos">
+          <img src="images/hands-plant2.jpg" class="d-block">
+          <div class="carousel-caption d-none d-md-block carousel-frase">
+            <p class="text-dark"><strong>Repensar para reducir tu impacto ambiental</strong></p>
+          </div>          
+        </div>
+        <div class="carousel-item carouselFotos">
+          <img src="images/forest.jpg" class="d-block">
+          <div class=" carousel-caption d-none d-md-block carousel-frase">
+            <p class="text-white"><strong>Comunicar para motivar y transformar</strong></p>
+          </div> 
+        </div>
+      </div>
+    </div>  
+  </div> 
   <section>
     <div class="gridIndex">
       <div id="indexIzquierda">
         <img src="images/lightbulb-sun.jpg" alt="manos sosteniendo una planta" id="manosPlanta">
       </div>
       <div id="indexDerecha">   
-        <!--<p>Acompañamos a las organizaciones a <strong>REPENSAR</strong> sus procesos en cada una de las etapas de su cadena de valor para <strong>REDUCIR</strong> su impacto ambiental.</p>-->
         <p>Creemos en el poder de las <strong>personas</strong> para <strong>transformar</strong> las organizaciones.</p>
         <p>Creemos en los <strong>emprendedores</strong> como <strong>agentes de cambio</strong> y creadores de soluciones a los grandes problemas sociales y ambientales del presente y del futuro.</p>
         <p>Creemos en el valor y el poder de la <strong>articulación</strong> y la <strong>cooperación</strong> entre organizaciones, empresas y emprendedores.</p>
         <p>Creemos que las <strong>empresas del futuro</strong> deben tener la sostenibilidad incorporada en su ADN.</p>
         <p>Trabajamos con <strong>innovación</strong>, <strong>desarrollo sostenible</strong> y <strong>economía circular</strong> como pilares.</p>
       </div>  
-      <p id="creamos">Creamos <strong>círculos virtuosos</strong> donde todos los involucrados se convierten en <strong>actores sociales comprometidos y responsables</strong> con el ambiente y sus stakeholders.</p>
     </div>        
+    <p id="creamos">Creamos <strong>círculos virtuosos</strong> donde todos los involucrados se convierten en <strong>actores sociales comprometidos y responsables</strong> con el ambiente y sus stakeholders.</p>
   </section>		 	 
 	<section>
     <div class="nuestrosServicios1">
