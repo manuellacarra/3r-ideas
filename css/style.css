@@ -58,7 +58,7 @@ header {
 
 #instagram {
   margin-left: 25px; }
-  @media screen and (min-width: 250px) and (max-width: 768px) {
+  @media screen and (min-width: 250px) and (max-width: 992px) {
     #instagram {
       margin-left: 0px; } }
 
@@ -159,12 +159,12 @@ section {
   margin-bottom: 0px;
   margin-top: 50px;
   grid-template-areas: "izquierda derecha"; }
-  @media screen and (min-width: 250px) and (max-width: 768px) {
+  @media screen and (min-width: 250px) and (max-width: 992px) {
     .gridIndex {
       grid-template-areas: "izquierda izquierda" "derecha derecha"; } }
   .gridIndex #indexIzquierda {
     grid-area: izquierda; }
-    @media screen and (min-width: 250px) and (max-width: 768px) {
+    @media screen and (min-width: 250px) and (max-width: 992px) {
       .gridIndex #indexIzquierda {
         margin-left: 0px;
         margin-right: 100px; } }
@@ -173,7 +173,7 @@ section {
     margin-left: 10px;
     margin-top: 20px;
     margin-right: 100px; }
-    @media screen and (min-width: 250px) and (max-width: 768px) {
+    @media screen and (min-width: 250px) and (max-width: 992px) {
       .gridIndex #indexDerecha {
         margin-left: 100px; } }
   .gridIndex #manosPlanta {
@@ -415,7 +415,7 @@ ul {
     align-items: center;
     margin: 0px;
     grid-template-areas: "izquierda derecha"; }
-    @media screen and (min-width: 250px) and (max-width: 768px) {
+    @media screen and (min-width: 250px) and (max-width: 992px) {
       #seccionEstrategia .grid-estrategia {
         grid-template-areas: "izquierda izquierda" "derecha derecha"; } }
     #seccionEstrategia .grid-estrategia #grid-estrategia-izquierda {
@@ -427,7 +427,7 @@ ul {
       grid-area: derecha;
       margin-right: 100px;
       margin-top: 20px; }
-      @media screen and (min-width: 250px) and (max-width: 768px) {
+      @media screen and (min-width: 250px) and (max-width: 992px) {
         #seccionEstrategia .grid-estrategia #grid-estrategia-derecha {
           margin-left: 100px; } }
       #seccionEstrategia .grid-estrategia #grid-estrategia-derecha ul {
@@ -450,7 +450,7 @@ ul {
     margin-bottom: 1rem;
     text-align: right;
     position: relative; }
-    @media screen and (min-width: 250px) and (max-width: 768px) {
+    @media screen and (min-width: 250px) and (max-width: 992px) {
       #seccionCapacitaciones #capacitaciones {
         padding-left: 170px; } }
   #seccionCapacitaciones .grid-capacitaciones {
@@ -462,14 +462,14 @@ ul {
     padding-top: 0px;
     margin: 0px;
     grid-template-areas: "izquierda derecha"; }
-    @media screen and (min-width: 250px) and (max-width: 768px) {
+    @media screen and (min-width: 250px) and (max-width: 992px) {
       #seccionCapacitaciones .grid-capacitaciones {
         align-content: center;
         grid-template-areas: "derecha derecha" "izquierda izquierda"; } }
     #seccionCapacitaciones .grid-capacitaciones #grid-capacitaciones-izquierda {
       grid-area: izquierda;
       margin-left: 100px; }
-      @media screen and (min-width: 250px) and (max-width: 768px) {
+      @media screen and (min-width: 250px) and (max-width: 992px) {
         #seccionCapacitaciones .grid-capacitaciones #grid-capacitaciones-izquierda {
           margin-right: 100px; } }
       #seccionCapacitaciones .grid-capacitaciones #grid-capacitaciones-izquierda ul {
@@ -482,7 +482,7 @@ ul {
       margin-bottom: 20px;
       margin-top: 0px;
       margin-left: 50px; }
-      @media screen and (min-width: 250px) and (max-width: 768px) {
+      @media screen and (min-width: 250px) and (max-width: 992px) {
         #seccionCapacitaciones .grid-capacitaciones #grid-capacitaciones-derecha {
           margin-left: 100px;
           margin-bottom: 40px; } }
@@ -497,7 +497,7 @@ ul {
   font-weight: 300;
   background-color: #848484;
   padding-bottom: 1rem; }
-  @media screen and (min-width: 250px) and (max-width: 768px) {
+  @media screen and (min-width: 250px) and (max-width: 992px) {
     #seccionComunicacion #comunicacionDeImpacto {
       padding-left: 100px; } }
 
@@ -509,7 +509,7 @@ ul {
   align-items: center;
   margin: 0px;
   grid-template-areas: "izquierda derecha"; }
-  @media screen and (min-width: 250px) and (max-width: 768px) {
+  @media screen and (min-width: 250px) and (max-width: 992px) {
     #seccionComunicacion .grid-comunicacion {
       align-content: center;
       grid-template-areas: "izquierda izquierda" "derecha derecha"; } }
@@ -526,7 +526,7 @@ ul {
     grid-area: derecha;
     margin-right: 100px;
     margin-top: 20px; }
-    @media screen and (min-width: 250px) and (max-width: 768px) {
+    @media screen and (min-width: 250px) and (max-width: 992px) {
       #seccionComunicacion .grid-comunicacion #grid-comunicacion-derecha {
         margin-left: 100px; } }
     #seccionComunicacion .grid-comunicacion #grid-comunicacion-derecha ul {
@@ -650,17 +650,20 @@ ul {
       grid-area: tel; }
     .grid-contacto .gridContactoIcons #tel-enlace-contacto {
       grid-area: num;
-      margin-top: 20px; }
+      margin-top: 20px;
+      margin-left: 2%; }
     .grid-contacto .gridContactoIcons #mail-icono-contacto {
       grid-area: sobre; }
     .grid-contacto .gridContactoIcons #mail-enlace-contacto {
       grid-area: mail;
-      margin-top: 20px; }
+      margin-top: 20px;
+      margin-left: 2%; }
     .grid-contacto .gridContactoIcons #map-icono-contacto {
       grid-area: flecha; }
     .grid-contacto .gridContactoIcons #map-enlace-contacto {
       grid-area: ciudad;
-      margin-top: 20px; }
+      margin-top: 20px;
+      margin-left: 2%; }
     .grid-contacto .gridContactoIcons p {
       font-size: 1rem;
       margin-top: 10px; }
@@ -699,7 +702,7 @@ footer {
     padding-top: 20px;
     line-height: 0.5rem;
     grid-template-areas: "izquierda centro derecha"; }
-    @media screen and (min-width: 250px) and (max-width: 768px) {
+    @media screen and (min-width: 250px) and (max-width: 992px) {
       footer .footer-grid {
         grid-template-areas: "izquierda izquierda" "centro centro" "derecha derecha"; } }
     footer .footer-grid #ft-izquierda {
@@ -709,7 +712,7 @@ footer {
     footer .footer-grid #ft-derecha {
       grid-area: derecha;
       margin-left: 30px; }
-      @media screen and (min-width: 250px) and (max-width: 768px) {
+      @media screen and (min-width: 250px) and (max-width: 992px) {
         footer .footer-grid #ft-derecha {
           margin-left: 0px; } }
     footer .footer-grid #footerLogo {
@@ -719,7 +722,7 @@ footer {
       margin-bottom: 30px;
       margin-top: 1rem;
       filter: invert(100%); }
-      @media screen and (min-width: 250px) and (max-width: 768px) {
+      @media screen and (min-width: 250px) and (max-width: 992px) {
         footer .footer-grid #footerLogo {
           display: none; } }
     footer .footer-grid p {
@@ -777,7 +780,7 @@ footer {
         grid-area: lin; }
       footer .footer-grid .ft-grid-2 #lin-enlace {
         grid-area: linlink; }
-      @media screen and (min-width: 250px) and (max-width: 768px) {
+      @media screen and (min-width: 250px) and (max-width: 992px) {
         footer .footer-grid .ft-grid-2 {
           margin-left: 0px; } }
     footer .footer-grid .ft-redes {
