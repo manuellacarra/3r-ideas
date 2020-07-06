@@ -37,11 +37,12 @@ header {
   header ul {
     font-family: 'Montserrat', sans-serif; }
   header #logo {
-    height: 47px;
-    width: 170px;
+    height: 57px;
+    width: 220px;
     margin-left: 10px;
     margin-bottom: 0px;
-    margin-top: 7px; }
+    margin-top: 0px;
+    align-content: center; }
   header .header-redes {
     margin-left: 0px;
     margin-right: 10px;
@@ -687,7 +688,7 @@ ul {
 --------------------------------------------------------------*/
 footer {
   padding: 0px;
-  background-color: #6f9c53;
+  background-color: #4a6937;
   margin-top: 0px; }
   footer .footer-grid {
     display: grid;
@@ -801,10 +802,11 @@ footer {
       margin-top: 3px; }
   footer #derechos {
     background-color: #b2b2b2;
-    padding: 0px; }
+    padding: 15px; }
     footer #derechos #derechosP {
       text-align: center;
-      font-size: 13px; }
+      font-size: 11px;
+      margin-bottom: 0px; }
 
 /*p{
    position: absolute;
