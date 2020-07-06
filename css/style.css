@@ -197,7 +197,7 @@ section {
   margin-left: 100px;
   margin-top: 0px;
   width: 40%; }
-  @media screen and (min-width: 250px) and (max-width: 768px) {
+  @media screen and (min-width: 250px) and (max-width: 992px) {
     #creamos {
       width: auto;
       margin-left: 100px;
@@ -316,7 +316,7 @@ ul {
   margin-left: 11%;
   margin-top: 70px;
   grid-template-areas: "izquierda derecha"; }
-  @media screen and (min-width: 250px) and (max-width: 768px) {
+  @media screen and (min-width: 250px) and (max-width: 992px) {
     .grid-nosotros {
       grid-template-areas: "izquierda izquierda" "derecha derecha"; } }
   .grid-nosotros #nosotros-izquierda {
@@ -340,6 +340,9 @@ ul {
       margin-left: 10px; }
     .grid-nosotros #nosotros-derecha p {
       font-size: 1rem; }
+      @media screen and (min-width: 250px) and (max-width: 992px) {
+        .grid-nosotros #nosotros-derecha p {
+          margin-bottom: 70px; } }
   .grid-nosotros .directores {
     height: 200px;
     width: 200px;
@@ -407,6 +410,10 @@ ul {
     font-weight: 300;
     background-color: #848484;
     margin-bottom: 1rem; }
+    @media screen and (min-width: 250px) and (max-width: 992px) {
+      #seccionEstrategia #estrategiaYGestion {
+        text-align: center;
+        padding-left: 0px; } }
   #seccionEstrategia .grid-estrategia {
     display: grid;
     grid-gap: 0px;
@@ -452,7 +459,8 @@ ul {
     position: relative; }
     @media screen and (min-width: 250px) and (max-width: 992px) {
       #seccionCapacitaciones #capacitaciones {
-        padding-left: 170px; } }
+        padding-right: 0px;
+        text-align: center; } }
   #seccionCapacitaciones .grid-capacitaciones {
     display: grid;
     grid-gap: 0px;
@@ -480,12 +488,17 @@ ul {
       grid-area: derecha;
       margin-right: 100px;
       margin-bottom: 20px;
-      margin-top: 0px;
+      margin-top: 20px;
       margin-left: 50px; }
       @media screen and (min-width: 250px) and (max-width: 992px) {
         #seccionCapacitaciones .grid-capacitaciones #grid-capacitaciones-derecha {
           margin-left: 100px;
           margin-bottom: 40px; } }
+      #seccionCapacitaciones .grid-capacitaciones #grid-capacitaciones-derecha #ilus-capacitaciones {
+        margin-left: 50px; }
+        @media screen and (min-width: 250px) and (max-width: 992px) {
+          #seccionCapacitaciones .grid-capacitaciones #grid-capacitaciones-derecha #ilus-capacitaciones {
+            margin-left: 20%; } }
 
 #seccionComunicacion #comunicacionDeImpacto {
   padding: 10px;
@@ -499,7 +512,8 @@ ul {
   padding-bottom: 1rem; }
   @media screen and (min-width: 250px) and (max-width: 992px) {
     #seccionComunicacion #comunicacionDeImpacto {
-      padding-left: 100px; } }
+      padding-left: 0px;
+      text-align: center; } }
 
 #seccionComunicacion .grid-comunicacion {
   display: grid;
@@ -517,11 +531,14 @@ ul {
     grid-area: izquierda;
     margin-left: 180px;
     margin-bottom: 20px;
-    margin-top: 0px; }
+    margin-top: 20px; }
     #seccionComunicacion .grid-comunicacion #grid-comunicacion-izquierda #hashtagg {
       height: auto;
       width: 50%;
       position: relative; }
+      @media screen and (min-width: 250px) and (max-width: 992px) {
+        #seccionComunicacion .grid-comunicacion #grid-comunicacion-izquierda #hashtagg {
+          margin-left: 10%; } }
   #seccionComunicacion .grid-comunicacion #grid-comunicacion-derecha {
     grid-area: derecha;
     margin-right: 100px;
@@ -538,6 +555,9 @@ ul {
   height: auto;
   width: 65%;
   position: relative; }
+  @media screen and (min-width: 250px) and (max-width: 992px) {
+    .fotos-servicios {
+      margin-left: 10%; } }
 
 .consultanos {
   font-family: 'Montserrat', sans-serif;
@@ -546,6 +566,9 @@ ul {
   margin-left: 100px;
   margin-top: 20px;
   padding-bottom: 1rem; }
+  @media screen and (min-width: 250px) and (max-width: 992px) {
+    .consultanos {
+      text-align: left; } }
   .consultanos button {
     background-color: #dcebbf; }
   .consultanos button:hover {
@@ -584,6 +607,9 @@ ul {
     padding: 20px;
     padding-bottom: 0px;
     margin-top: 20px; }
+    @media screen and (min-width: 250px) and (max-width: 768px) {
+      .grid-contacto #izquierda {
+        margin-left: 60px; } }
     .grid-contacto #izquierda #hablemos {
       font-family: 'Montserrat', sans-serif;
       color: black;
@@ -596,6 +622,9 @@ ul {
   .grid-contacto #derecha {
     grid-area: derecha;
     padding: 20px; }
+    @media screen and (min-width: 250px) and (max-width: 768px) {
+      .grid-contacto #derecha {
+        margin-left: 30px; } }
   .grid-contacto .elementos {
     margin: 10px; }
   .grid-contacto form .formulario {
