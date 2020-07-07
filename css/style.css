@@ -45,7 +45,8 @@ header {
     align-content: center; }
     @media screen and (min-width: 250px) and (max-width: 992px) {
       header #logo {
-        align-items: center; } }
+        align-items: center;
+        margin-left: 0px; } }
   header .header-redes {
     margin-left: 0px;
     margin-right: 10px;
@@ -60,7 +61,11 @@ header {
   justify-content: space-between; }
   @media screen and (min-width: 250px) and (max-width: 992px) {
     .flex-header {
-      display: block; } }
+      flex-direction: column;
+      align-items: center; } }
+
+.navbar-light .navbar-toggler {
+  width: 100%; }
 
 @media screen and (min-width: 250px) and (max-width: 992px) {
   #nav-responsive {
@@ -81,13 +86,17 @@ header {
 --------------------------------------------------------------*/
 .inicio {
   margin-top: 50px; }
+  @media screen and (min-width: 250px) and (max-width: 992px) {
+    .inicio {
+      margin-top: 150px; } }
 
-.carousel .carousel-inner {
-  /*height: 75vh;*/ }
-  .carousel .carousel-inner .carousel-item img {
-    position: relative;
-    width: 100%;
-    height: 600px; }
+.carousel .carousel-inner .carousel-item img {
+  position: relative;
+  width: 100%;
+  height: 600px; }
+  @media screen and (min-width: 250px) and (max-width: 992px) {
+    .carousel .carousel-inner .carousel-item img {
+      height: auto; } }
 
 .carousel-frase {
   z-index: 10;
@@ -146,6 +155,7 @@ section {
   grid-template-areas: "izquierda derecha"; }
   @media screen and (min-width: 250px) and (max-width: 768px) {
     .gridIndex {
+      margin-top: 20px;
       grid-template-areas: "izquierda izquierda" "derecha derecha"; } }
   .gridIndex #indexIzquierda {
     grid-area: izquierda; }
