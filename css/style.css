@@ -43,6 +43,9 @@ header {
     margin-bottom: 0px;
     margin-top: 0px;
     align-content: center; }
+    @media screen and (min-width: 250px) and (max-width: 992px) {
+      header #logo {
+        align-items: center; } }
   header .header-redes {
     margin-left: 0px;
     margin-right: 10px;
@@ -55,6 +58,9 @@ header {
 .flex-header {
   display: flex;
   justify-content: space-between; }
+  @media screen and (min-width: 250px) and (max-width: 992px) {
+    .flex-header {
+      display: block; } }
 
 #instagram {
   margin-left: 25px; }
@@ -75,39 +81,27 @@ header {
     width: 100%;
     height: 600px; }
 
-.carousel-caption {
-  z-index: 10;
-  position: relative;
-  width: 50%;
-  align-items: left;
-  right: 15%;
-  bottom: 20px;
-  left: 0px; }
-
-.carousel-frase {
-  padding-top: 20px;
-  padding-bottom: 20px;
-  color: #fff;
-  margin-bottom: 250px;
-  align-items: left; }
-  .carousel-frase p {
-    font-family: 'Montserrat', sans-serif;
-    font-size: 2rem;
-    margin-left: 0px;
-    padding-right: 30px;
-    margin-right: 0px;
-    padding-left: 50px;
-    padding-bottom: 1rem;
-    padding-top: 1rem;
-    margin-bottom: 0px;
-    font-weight: 400;
-    background-color: white;
-    background: rgba(255, 255, 255, 0.3);
-    margin-left: 0px;
-    text-align: left;
-    margin-bottom: 0px; }
-
-/*.carousel-frase{
+/*.carousel-caption{
+    z-index: 10; 
+    position: relative; width: 50%; align-items: left;
+    right: 15%;
+    bottom: 20px;
+    left: 0px;
+}
+.carousel-frase{
+   
+    padding-top: 20px;
+    padding-bottom: 20px;
+    color: #fff;
+    margin-bottom: 250px;
+    align-items: left;
+  p {
+    font-family: 'Montserrat', sans-serif; font-size: 2rem; margin-left: 0px; padding-right: 30px; 
+    margin-right: 0px; padding-left: 50px; padding-bottom: 1rem; padding-top: 1rem; margin-bottom: 0px; font-weight: 400;
+    background-color: white; background:rgba(255,255,255, 0.3); margin-left: 0px; text-align: left; margin-bottom: 0px;
+  }
+}
+.carousel-frase{
    
   
   
@@ -167,7 +161,7 @@ section {
     @media screen and (min-width: 250px) and (max-width: 992px) {
       .gridIndex #indexIzquierda {
         margin-left: 0px;
-        margin-right: 100px; } }
+        margin-right: 0px; } }
   .gridIndex #indexDerecha {
     grid-area: derecha;
     margin-left: 10px;
@@ -175,13 +169,19 @@ section {
     margin-right: 100px; }
     @media screen and (min-width: 250px) and (max-width: 992px) {
       .gridIndex #indexDerecha {
-        margin-left: 100px; } }
+        margin-left: 10px;
+        margin-right: 10px; } }
   .gridIndex #manosPlanta {
     height: auto;
     width: 80%;
     margin-left: 100px;
     margin-bottom: 0px;
     position: relative; }
+    @media screen and (min-width: 250px) and (max-width: 992px) {
+      .gridIndex #manosPlanta {
+        margin-left: 0px;
+        margin-right: 0px;
+        width: 100%; } }
 
 .nuestrosServicios1 {
   background-color: #6f9c53;
@@ -200,8 +200,8 @@ section {
   @media screen and (min-width: 250px) and (max-width: 992px) {
     #creamos {
       width: auto;
-      margin-left: 100px;
-      margin-right: 100px; } }
+      margin-left: 10px;
+      margin-right: 10px; } }
 
 .gridIndexServicios {
   display: grid;
@@ -218,6 +218,11 @@ section {
       margin-bottom: 60px;
       text-align: center;
       grid-template-areas: "izquierda izquierda izquierda" "centro centro centro" "derecha derecha derecha"; } }
+  @media screen and (min-width: 250px) and (max-width: 992px) {
+    .gridIndexServicios {
+      justify-content: space-between;
+      margin-left: 30px;
+      margin-right: 30px; } }
   .gridIndexServicios .gridIndexServiciosIzquierda {
     grid-area: izquierda; }
   .gridIndexServicios .gridIndexServiciosCentro {
@@ -276,6 +281,10 @@ ul {
     padding-top: 0px;
     margin-top: 0px;
     margin-left: 100px; }
+    @media screen and (min-width: 250px) and (max-width: 992px) {
+      .nosotros-content #nosotros {
+        margin-left: 10px;
+        margin-right: 0px; } }
     .nosotros-content #nosotros h1 {
       font-family: 'Roboto', sans-serif; }
   .nosotros-content .grid-parrafo {
@@ -285,9 +294,11 @@ ul {
     margin-left: 100px;
     margin-right: 100px;
     grid-template-areas: "izquierda  derecha"; }
-    @media screen and (min-width: 250px) and (max-width: 768px) {
+    @media screen and (min-width: 250px) and (max-width: 992px) {
       .nosotros-content .grid-parrafo {
         grid-gap: 0%;
+        margin-left: 10px;
+        margin-right: 10px;
         grid-template-areas: "izquierda izquierda" "derecha derecha"; } }
     .nosotros-content .grid-parrafo #p-izquierda {
       grid-area: izquierda; }
@@ -430,13 +441,18 @@ ul {
       margin-left: 100px;
       margin-bottom: 20px;
       margin-top: 20px; }
+      @media screen and (min-width: 250px) and (max-width: 992px) {
+        #seccionEstrategia .grid-estrategia #grid-estrategia-izquierda {
+          margin-left: 0px;
+          margin-right: 0px; } }
     #seccionEstrategia .grid-estrategia #grid-estrategia-derecha {
       grid-area: derecha;
       margin-right: 100px;
       margin-top: 20px; }
       @media screen and (min-width: 250px) and (max-width: 992px) {
         #seccionEstrategia .grid-estrategia #grid-estrategia-derecha {
-          margin-left: 100px; } }
+          margin-left: 10px;
+          margin-right: 10px; } }
       #seccionEstrategia .grid-estrategia #grid-estrategia-derecha ul {
         margin-left: 0px; }
         #seccionEstrategia .grid-estrategia #grid-estrategia-derecha ul li {
@@ -479,7 +495,8 @@ ul {
       margin-left: 100px; }
       @media screen and (min-width: 250px) and (max-width: 992px) {
         #seccionCapacitaciones .grid-capacitaciones #grid-capacitaciones-izquierda {
-          margin-right: 100px; } }
+          margin-right: 10px;
+          margin-left: 10px; } }
       #seccionCapacitaciones .grid-capacitaciones #grid-capacitaciones-izquierda ul {
         margin-left: 0px; }
         #seccionCapacitaciones .grid-capacitaciones #grid-capacitaciones-izquierda ul li {
@@ -492,13 +509,13 @@ ul {
       margin-left: 50px; }
       @media screen and (min-width: 250px) and (max-width: 992px) {
         #seccionCapacitaciones .grid-capacitaciones #grid-capacitaciones-derecha {
-          margin-left: 100px;
-          margin-bottom: 40px; } }
+          margin-left: 0px;
+          margin-right: 0px; } }
       #seccionCapacitaciones .grid-capacitaciones #grid-capacitaciones-derecha #ilus-capacitaciones {
         margin-left: 50px; }
         @media screen and (min-width: 250px) and (max-width: 992px) {
           #seccionCapacitaciones .grid-capacitaciones #grid-capacitaciones-derecha #ilus-capacitaciones {
-            margin-left: 20%; } }
+            margin-left: 0px; } }
 
 #seccionComunicacion #comunicacionDeImpacto {
   padding: 10px;
@@ -532,20 +549,26 @@ ul {
     margin-left: 180px;
     margin-bottom: 20px;
     margin-top: 20px; }
+    @media screen and (min-width: 250px) and (max-width: 992px) {
+      #seccionComunicacion .grid-comunicacion #grid-comunicacion-izquierda {
+        margin-left: 0px;
+        margin-right: 0px;
+        align-content: center; } }
     #seccionComunicacion .grid-comunicacion #grid-comunicacion-izquierda #hashtagg {
       height: auto;
       width: 50%;
       position: relative; }
       @media screen and (min-width: 250px) and (max-width: 992px) {
         #seccionComunicacion .grid-comunicacion #grid-comunicacion-izquierda #hashtagg {
-          margin-left: 10%; } }
+          width: 100%; } }
   #seccionComunicacion .grid-comunicacion #grid-comunicacion-derecha {
     grid-area: derecha;
     margin-right: 100px;
     margin-top: 20px; }
     @media screen and (min-width: 250px) and (max-width: 992px) {
       #seccionComunicacion .grid-comunicacion #grid-comunicacion-derecha {
-        margin-left: 100px; } }
+        margin-left: 10px;
+        margin-right: 10px; } }
     #seccionComunicacion .grid-comunicacion #grid-comunicacion-derecha ul {
       margin-left: 0px; }
       #seccionComunicacion .grid-comunicacion #grid-comunicacion-derecha ul li {
@@ -557,7 +580,7 @@ ul {
   position: relative; }
   @media screen and (min-width: 250px) and (max-width: 992px) {
     .fotos-servicios {
-      margin-left: 10%; } }
+      width: 100%; } }
 
 .consultanos {
   font-family: 'Montserrat', sans-serif;
@@ -568,7 +591,8 @@ ul {
   padding-bottom: 1rem; }
   @media screen and (min-width: 250px) and (max-width: 992px) {
     .consultanos {
-      text-align: left; } }
+      text-align: left;
+      margin-left: 10px; } }
   .consultanos button {
     background-color: #dcebbf; }
   .consultanos button:hover {
@@ -581,6 +605,10 @@ ul {
   margin-left: 100px;
   margin-top: 0px;
   padding-bottom: 1rem; }
+  @media screen and (min-width: 250px) and (max-width: 992px) {
+    .consultanos2 {
+      text-align: left;
+      margin-left: 10px; } }
   .consultanos2 button {
     background-color: #dcebbf; }
   .consultanos2 button:hover {
@@ -609,7 +637,7 @@ ul {
     margin-top: 20px; }
     @media screen and (min-width: 250px) and (max-width: 768px) {
       .grid-contacto #izquierda {
-        margin-left: 60px; } }
+        margin-left: 10px; } }
     .grid-contacto #izquierda #hablemos {
       font-family: 'Montserrat', sans-serif;
       color: black;
@@ -624,7 +652,7 @@ ul {
     padding: 20px; }
     @media screen and (min-width: 250px) and (max-width: 768px) {
       .grid-contacto #derecha {
-        margin-left: 30px; } }
+        margin-left: 0px; } }
   .grid-contacto .elementos {
     margin: 10px; }
   .grid-contacto form .formulario {
@@ -636,6 +664,10 @@ ul {
     width: 300px;
     font-size: 17px;
     position: relative; }
+    @media screen and (min-width: 250px) and (max-width: 992px) {
+      .grid-contacto form .formulario {
+        margin-left: 10px;
+        margin-right: 10px; } }
   .grid-contacto form .label {
     margin-bottom: 0px;
     margin-top: 10px;
@@ -653,6 +685,9 @@ ul {
     font-size: 20px;
     border: 1px solid #848484;
     font-family: 'Roboto'; }
+    @media screen and (min-width: 250px) and (max-width: 992px) {
+      .grid-contacto form #comentario {
+        margin-left: 10px; } }
   .grid-contacto form .flexOpcional {
     display: flex;
     flex-direction: row;
@@ -679,20 +714,26 @@ ul {
       grid-area: tel; }
     .grid-contacto .gridContactoIcons #tel-enlace-contacto {
       grid-area: num;
-      margin-top: 20px;
-      margin-left: 2%; }
+      margin-top: 20px; }
+      @media screen and (min-width: 250px) and (max-width: 992px) {
+        .grid-contacto .gridContactoIcons #tel-enlace-contacto {
+          margin-left: 20px; } }
     .grid-contacto .gridContactoIcons #mail-icono-contacto {
       grid-area: sobre; }
     .grid-contacto .gridContactoIcons #mail-enlace-contacto {
       grid-area: mail;
-      margin-top: 20px;
-      margin-left: 2%; }
+      margin-top: 20px; }
+      @media screen and (min-width: 250px) and (max-width: 992px) {
+        .grid-contacto .gridContactoIcons #mail-enlace-contacto {
+          margin-left: 20px; } }
     .grid-contacto .gridContactoIcons #map-icono-contacto {
       grid-area: flecha; }
     .grid-contacto .gridContactoIcons #map-enlace-contacto {
       grid-area: ciudad;
-      margin-top: 20px;
-      margin-left: 2%; }
+      margin-top: 20px; }
+      @media screen and (min-width: 250px) and (max-width: 992px) {
+        .grid-contacto .gridContactoIcons #map-enlace-contacto {
+          margin-left: 20px; } }
     .grid-contacto .gridContactoIcons p {
       font-size: 1rem;
       margin-top: 10px; }
@@ -733,6 +774,10 @@ footer {
     grid-template-areas: "izquierda centro derecha"; }
     @media screen and (min-width: 250px) and (max-width: 992px) {
       footer .footer-grid {
+        justify-content: space-between; } }
+    @media screen and (min-width: 250px) and (max-width: 768px) {
+      footer .footer-grid {
+        width: 100%;
         grid-template-areas: "izquierda izquierda" "centro centro" "derecha derecha"; } }
     footer .footer-grid #ft-izquierda {
       grid-area: izquierda; }
@@ -741,7 +786,7 @@ footer {
     footer .footer-grid #ft-derecha {
       grid-area: derecha;
       margin-left: 30px; }
-      @media screen and (min-width: 250px) and (max-width: 992px) {
+      @media screen and (min-width: 250px) and (max-width: 768px) {
         footer .footer-grid #ft-derecha {
           margin-left: 0px; } }
     footer .footer-grid #footerLogo {
@@ -752,6 +797,9 @@ footer {
       margin-top: 1rem;
       filter: invert(100%); }
       @media screen and (min-width: 250px) and (max-width: 992px) {
+        footer .footer-grid #footerLogo {
+          margin-left: 0px; } }
+      @media screen and (min-width: 250px) and (max-width: 768px) {
         footer .footer-grid #footerLogo {
           display: none; } }
     footer .footer-grid p {
@@ -771,6 +819,9 @@ footer {
       margin-left: 0px;
       margin-right: 0px;
       grid-template-areas: "tel num" "sobre mail" "flecha ciudad"; }
+      @media screen and (min-width: 250px) and (max-width: 768px) {
+        footer .footer-grid .ft-grid-1 {
+          width: 100%; } }
       footer .footer-grid .ft-grid-1 #tel-icono {
         grid-area: tel; }
       footer .footer-grid .ft-grid-1 #tel-enlace {
@@ -783,6 +834,14 @@ footer {
         grid-area: flecha; }
       footer .footer-grid .ft-grid-1 #map-enlace {
         grid-area: ciudad; }
+        @media screen and (min-width: 250px) and (max-width: 992px) {
+          footer .footer-grid .ft-grid-1 #map-enlace {
+            line-height: 20px;
+            margin-top: -3px; } }
+        @media screen and (min-width: 250px) and (max-width: 768px) {
+          footer .footer-grid .ft-grid-1 #map-enlace {
+            line-height: 20px;
+            margin-bottom: 10px; } }
     footer .footer-grid .ft-grid-2 {
       display: grid;
       grid-gap: 0px;
@@ -822,6 +881,9 @@ footer {
       padding-left: 0px;
       margin-left: 0px;
       margin-top: 3px; }
+      @media screen and (min-width: 250px) and (max-width: 992px) {
+        footer .footer-grid .ft-enlaces {
+          margin-left: 10px; } }
     footer .footer-grid .ft-redes-1 {
       margin-left: 0px;
       padding-right: 0px;
@@ -832,6 +894,9 @@ footer {
       margin-left: 0px;
       padding-right: 0px;
       margin-top: 3px; }
+      @media screen and (min-width: 250px) and (max-width: 992px) {
+        footer .footer-grid .ft-enlaces-1 {
+          margin-left: 10px; } }
   footer #derechos {
     background-color: #b2b2b2;
     padding: 15px; }
