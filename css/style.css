@@ -100,6 +100,10 @@ header {
   @media screen and (min-width: 250px) and (max-width: 768px) {
     .carousel-frase {
       width: 65%; } }
+  @media screen and (min-width: 250px) and (max-width: 576px) {
+    .carousel-frase {
+      width: 100%;
+      align-items: center; } }
   .carousel-frase p {
     font-family: 'Montserrat', sans-serif;
     font-size: 2rem;
@@ -121,44 +125,6 @@ header {
         padding-left: 10px;
         padding-right: 0px; } }
 
-/*#hero {
-  background: url("../images/hands-plant2.jpg"); background-position: center; background-size: cover;
-   position: relative; padding-top: 300px; padding-bottom: 330px; height: 60vh; width: 100%;
-  
-  #hero:before {
-  	content: ""; background: rgba(0, 0, 0, 0.4); position: absolute; bottom: 0; top: 0; left: 0; right: 0;
-	}
-	.container {
-  		padding-top: 0px; 
-	}
-  .frase-inicio{
-        
-  }
-	@media (max-width: 992px) {
-  		#hero .container {
-    		padding-top: 62px;
-  		}
-  }
-
-	@media (min-width: 1024px) {
-  		#hero {
-    		background-attachment: fixed;
-  		}
-	}
-
-	@media (max-width: 768px) {
-  		#hero {
-    		height: 100vh;
-  		}
-  		#hero h1 {
-    		font-size: 28px;
-    		line-height: 36px;
-  		}
-  		#hero h2 {
-    		font-size: 18px;
-    		line-height: 24px;
-  		}
-	}*/
 section {
   padding-bottom: 0px;
   padding-top: 0px;
@@ -174,7 +140,7 @@ section {
   margin-bottom: 0px;
   margin-top: 50px;
   grid-template-areas: "izquierda derecha"; }
-  @media screen and (min-width: 250px) and (max-width: 992px) {
+  @media screen and (min-width: 250px) and (max-width: 768px) {
     .gridIndex {
       grid-template-areas: "izquierda izquierda" "derecha derecha"; } }
   .gridIndex #indexIzquierda {
@@ -204,15 +170,9 @@ section {
         margin-right: 0px;
         width: 100%; } }
 
-.nuestrosServicios1 {
-  background-color: #6f9c53;
-  padding: 5px;
-  margin-top: 50px;
-  text-align: center; }
-  .nuestrosServicios1 #nuestrosServicios2 {
-    color: white;
-    margin-top: .5rem;
-    margin-bottom: .5rem; }
+@media screen and (min-width: 250px) and (max-width: 992px) {
+  .parrafoResponsive {
+    display: none; } }
 
 #creamos {
   margin-left: 100px;
@@ -222,7 +182,18 @@ section {
     #creamos {
       width: auto;
       margin-left: 10px;
-      margin-right: 10px; } }
+      margin-right: 10px;
+      margin-top: 10px; } }
+
+.nuestrosServicios1 {
+  background-color: #6f9c53;
+  padding: 5px;
+  margin-top: 50px;
+  text-align: center; }
+  .nuestrosServicios1 #nuestrosServicios2 {
+    color: white;
+    margin-top: .5rem;
+    margin-bottom: .5rem; }
 
 .gridIndexServicios {
   display: grid;
@@ -239,7 +210,7 @@ section {
       margin-bottom: 60px;
       text-align: center;
       grid-template-areas: "izquierda izquierda izquierda" "centro centro centro" "derecha derecha derecha"; } }
-  @media screen and (min-width: 250px) and (max-width: 992px) {
+  @media screen and (min-width: 250px) and (max-width: 768px) {
     .gridIndexServicios {
       justify-content: space-between;
       margin-left: 30px;
@@ -442,7 +413,7 @@ ul {
     font-weight: 300;
     background-color: #848484;
     margin-bottom: 1rem; }
-    @media screen and (min-width: 250px) and (max-width: 992px) {
+    @media screen and (min-width: 250px) and (max-width: 768px) {
       #seccionEstrategia #estrategiaYGestion {
         text-align: center;
         padding-left: 0px; } }
@@ -454,7 +425,7 @@ ul {
     align-items: center;
     margin: 0px;
     grid-template-areas: "izquierda derecha"; }
-    @media screen and (min-width: 250px) and (max-width: 992px) {
+    @media screen and (min-width: 250px) and (max-width: 768px) {
       #seccionEstrategia .grid-estrategia {
         grid-template-areas: "izquierda izquierda" "derecha derecha"; } }
     #seccionEstrategia .grid-estrategia #grid-estrategia-izquierda {
@@ -494,7 +465,7 @@ ul {
     margin-bottom: 1rem;
     text-align: right;
     position: relative; }
-    @media screen and (min-width: 250px) and (max-width: 992px) {
+    @media screen and (min-width: 250px) and (max-width: 768px) {
       #seccionCapacitaciones #capacitaciones {
         padding-right: 0px;
         text-align: center; } }
@@ -507,7 +478,7 @@ ul {
     padding-top: 0px;
     margin: 0px;
     grid-template-areas: "izquierda derecha"; }
-    @media screen and (min-width: 250px) and (max-width: 992px) {
+    @media screen and (min-width: 250px) and (max-width: 768px) {
       #seccionCapacitaciones .grid-capacitaciones {
         align-content: center;
         grid-template-areas: "derecha derecha" "izquierda izquierda"; } }
@@ -548,7 +519,7 @@ ul {
   font-weight: 300;
   background-color: #848484;
   padding-bottom: 1rem; }
-  @media screen and (min-width: 250px) and (max-width: 992px) {
+  @media screen and (min-width: 250px) and (max-width: 768px) {
     #seccionComunicacion #comunicacionDeImpacto {
       padding-left: 0px;
       text-align: center; } }
@@ -561,7 +532,7 @@ ul {
   align-items: center;
   margin: 0px;
   grid-template-areas: "izquierda derecha"; }
-  @media screen and (min-width: 250px) and (max-width: 992px) {
+  @media screen and (min-width: 250px) and (max-width: 768px) {
     #seccionComunicacion .grid-comunicacion {
       align-content: center;
       grid-template-areas: "izquierda izquierda" "derecha derecha"; } }
@@ -610,7 +581,10 @@ ul {
   margin-left: 100px;
   margin-top: 20px;
   padding-bottom: 1rem; }
-  @media screen and (min-width: 250px) and (max-width: 992px) {
+  @media screen and (min-width: 768px) and (max-width: 992px) {
+    .consultanos {
+      margin-right: 250px; } }
+  @media screen and (min-width: 250px) and (max-width: 768px) {
     .consultanos {
       text-align: left;
       margin-left: 10px; } }
@@ -676,6 +650,9 @@ ul {
         margin-left: 0px; } }
   .grid-contacto .elementos {
     margin: 10px; }
+  @media screen and (min-width: 250px) and (max-width: 992px) {
+    .grid-contacto form {
+      margin-right: 10px; } }
   .grid-contacto form .formulario {
     margin-top: 0px;
     margin-bottom: 10px;
@@ -685,10 +662,6 @@ ul {
     width: 300px;
     font-size: 17px;
     position: relative; }
-    @media screen and (min-width: 250px) and (max-width: 992px) {
-      .grid-contacto form .formulario {
-        margin-left: 10px;
-        margin-right: 10px; } }
   .grid-contacto form .label {
     margin-bottom: 0px;
     margin-top: 10px;
@@ -706,9 +679,6 @@ ul {
     font-size: 20px;
     border: 1px solid #848484;
     font-family: 'Roboto'; }
-    @media screen and (min-width: 250px) and (max-width: 992px) {
-      .grid-contacto form #comentario {
-        margin-left: 10px; } }
   .grid-contacto form .flexOpcional {
     display: flex;
     flex-direction: row;
