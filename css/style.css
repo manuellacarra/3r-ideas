@@ -654,9 +654,6 @@ ul {
         margin-left: 0px; } }
   .grid-contacto .elementos {
     margin: 10px; }
-  @media screen and (min-width: 250px) and (max-width: 992px) {
-    .grid-contacto form {
-      margin-right: 10px; } }
   .grid-contacto form .formulario {
     margin-top: 0px;
     margin-bottom: 10px;
@@ -666,6 +663,10 @@ ul {
     width: 300px;
     font-size: 17px;
     position: relative; }
+    @media screen and (min-width: 250px) and (max-width: 992px) {
+      .grid-contacto form .formulario {
+        margin-right: 10px;
+        width: auto; } }
   .grid-contacto form .label {
     margin-bottom: 0px;
     margin-top: 10px;
@@ -683,6 +684,10 @@ ul {
     font-size: 20px;
     border: 1px solid #848484;
     font-family: 'Roboto'; }
+    @media screen and (min-width: 250px) and (max-width: 992px) {
+      .grid-contacto form #comentario {
+        margin-right: 10px;
+        width: auto; } }
   .grid-contacto form .flexOpcional {
     display: flex;
     flex-direction: row;
