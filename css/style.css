@@ -72,6 +72,10 @@ header {
     #instagram {
       margin-left: 0px; } }
 
+@media screen and (min-width: 250px) and (max-width: 992px) {
+  #linkedin {
+    margin-bottom: 20px; } }
+
 /*--------------------------------------------------------------
 # index 1
 --------------------------------------------------------------*/
