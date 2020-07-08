@@ -51,7 +51,7 @@ header {
     margin-left: 0px;
     margin-right: 10px;
     margin-bottom: 10px; }
-    header .header-redes .header-redes:hover {
+    header .header-redes :hover {
       transform: scale(1.1);
       transform-origin: center;
       transition: 300ms; }
@@ -66,10 +66,6 @@ header {
 
 .navbar-light .navbar-toggler {
   width: 100%; }
-
-@media screen and (min-width: 250px) and (max-width: 992px) {
-  #nav-responsive {
-    text-align: center; } }
 
 #instagram {
   margin-left: 25px; }
@@ -112,10 +108,10 @@ header {
   align-items: left; }
   @media screen and (min-width: 250px) and (max-width: 768px) {
     .carousel-frase {
-      width: 65%; } }
+      width: auto;
+      margin-bottom: auto; } }
   @media screen and (min-width: 250px) and (max-width: 576px) {
     .carousel-frase {
-      width: 100%;
       align-items: center; } }
   .carousel-frase p {
     font-family: 'Montserrat', sans-serif;
@@ -135,8 +131,7 @@ header {
     margin-bottom: 0px; }
     @media screen and (min-width: 250px) and (max-width: 768px) {
       .carousel-frase p {
-        padding-left: 10px;
-        padding-right: 0px; } }
+        padding: auto; } }
 
 section {
   padding-bottom: 0px;
@@ -364,7 +359,7 @@ ul {
       font-size: 1rem; }
       @media screen and (min-width: 250px) and (max-width: 992px) {
         .grid-nosotros #nosotros-derecha p {
-          margin-bottom: 50px; } }
+          margin-bottom: 60px; } }
   .grid-nosotros .directores {
     height: 200px;
     width: 200px;
