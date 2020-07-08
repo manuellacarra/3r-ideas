@@ -692,7 +692,11 @@ ul {
     @media screen and (min-width: 250px) and (max-width: 992px) {
       .grid-contacto form .formulario {
         margin-right: 10px;
-        width: auto; } }
+        width: auto;
+        display: flex;
+        flex-direction: row;
+        flex-wrap: wrap;
+        align-items: center; } }
   .grid-contacto form .label {
     margin-bottom: 0px;
     margin-top: 10px;
@@ -716,14 +720,13 @@ ul {
         height: auto;
         margin-right: 10px;
         font-size: 18px; } }
-  .grid-contacto form .flexOpcional {
-    display: flex;
-    flex-direction: row;
-    margin-bottom: 0px;
-    padding-bottom: 0px;
-    height: 27px; }
   .grid-contacto form .boton {
-    font-family: 'Montserrat', sans-serif; }
+    font-family: 'Montserrat', sans-serif;
+    width: 25%;
+    padding: 10px; }
+    @media screen and (min-width: 250px) and (max-width: 992px) {
+      .grid-contacto form .boton {
+        width: auto; } }
   .grid-contacto form .boton:hover {
     transform: scale(1.1);
     transform-origin: center;
