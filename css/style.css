@@ -106,13 +106,15 @@ header {
   color: #fff;
   margin-bottom: 200px;
   align-items: left; }
-  @media screen and (min-width: 250px) and (max-width: 768px) {
+  @media screen and (min-width: 576px) and (max-width: 992px) {
     .carousel-frase {
-      width: auto;
-      margin-bottom: auto; } }
+      width: 70%;
+      margin-bottom: 100px; } }
   @media screen and (min-width: 250px) and (max-width: 576px) {
     .carousel-frase {
-      align-items: center; } }
+      align-items: center;
+      margin-bottom: 50px;
+      width: auto; } }
   .carousel-frase p {
     font-family: 'Montserrat', sans-serif;
     font-size: 2rem;
@@ -131,7 +133,8 @@ header {
     margin-bottom: 0px; }
     @media screen and (min-width: 250px) and (max-width: 768px) {
       .carousel-frase p {
-        padding: auto; } }
+        padding: auto;
+        font-size: 1rem; } }
 
 section {
   padding-bottom: 0px;
