@@ -243,6 +243,12 @@ section {
   .gridIndexServicios .parrafoIndexServicios {
     font-size: 1rem;
     margin-top: 10px; }
+  .gridIndexServicios .parrafoIndexServicios1 {
+    font-size: 1rem;
+    margin-top: 10px; }
+    @media screen and (min-width: 250px) and (max-width: 992px) {
+      .gridIndexServicios .parrafoIndexServicios1 {
+        margin-bottom: 70px; } }
 
 /*--------------------------------------------------------------
 # General
