@@ -81,7 +81,7 @@ header {
 # index 1
 --------------------------------------------------------------*/
 .inicio {
-  margin-top: 50px; }
+  margin-top: 100px; }
   @media screen and (min-width: 250px) and (max-width: 992px) {
     .inicio {
       margin-top: 150px; } }
@@ -89,7 +89,9 @@ header {
 .carousel .carousel-inner .carousel-item img {
   position: relative;
   width: 100%;
-  height: 600px; }
+  height: 60vh;
+  object-fit: cover;
+  object-position: center; }
   @media screen and (min-width: 250px) and (max-width: 992px) {
     .carousel .carousel-inner .carousel-item img {
       height: auto; } }
@@ -104,7 +106,7 @@ header {
   padding-top: 20px;
   padding-bottom: 20px;
   color: #fff;
-  margin-bottom: 200px;
+  margin-bottom: 120px;
   align-items: left; }
   @media screen and (min-width: 576px) and (max-width: 992px) {
     .carousel-frase {
@@ -139,8 +141,8 @@ header {
 section {
   padding-bottom: 0px;
   padding-top: 0px;
-  margin-bottom: 50px;
-  margin-top: 50px; }
+  margin-bottom: 30px;
+  margin-top: 30px; }
 
 .gridIndex {
   display: grid;
@@ -148,13 +150,14 @@ section {
   justify-content: space-around;
   grid-template-columns: 50% 50%;
   align-items: center;
-  margin-bottom: 0px;
-  margin-top: 50px;
+  margin-bottom: 10px;
+  margin-top: 0px;
   grid-template-areas: "izquierda derecha"; }
   @media screen and (min-width: 250px) and (max-width: 768px) {
     .gridIndex {
       margin-top: 20px;
-      grid-template-areas: "izquierda izquierda" "derecha derecha"; } }
+      grid-template-areas: "izquierda izquierda"
+ "derecha derecha"; } }
   .gridIndex #indexIzquierda {
     grid-area: izquierda; }
     @media screen and (min-width: 250px) and (max-width: 992px) {
@@ -163,15 +166,18 @@ section {
         margin-right: 0px; } }
   .gridIndex #indexDerecha {
     grid-area: derecha;
-    margin-left: 10px;
-    margin-top: 20px;
+    margin-left: 30px;
+    margin-top: 15px;
     margin-right: 100px; }
+    .gridIndex #indexDerecha p {
+      font-size: 1.1rem;
+      margin-bottom: 0.8rem; }
     @media screen and (min-width: 250px) and (max-width: 992px) {
       .gridIndex #indexDerecha {
         margin-left: 10px;
         margin-right: 10px; } }
   .gridIndex #manosPlanta {
-    height: auto;
+    height: 100%;
     width: 80%;
     margin-left: 100px;
     margin-bottom: 0px;
@@ -189,7 +195,8 @@ section {
 #creamos {
   margin-left: 100px;
   margin-top: 0px;
-  width: 40%; }
+  width: 40%;
+  font-size: 1.1rem; }
   @media screen and (min-width: 250px) and (max-width: 992px) {
     #creamos {
       width: auto;
@@ -200,7 +207,7 @@ section {
 .nuestrosServicios1 {
   background-color: #6f9c53;
   padding: 5px;
-  margin-top: 50px;
+  margin-top: 0px;
   text-align: center; }
   .nuestrosServicios1 #nuestrosServicios2 {
     color: white;
@@ -212,8 +219,8 @@ section {
   grid-gap: 5%;
   grid-template-columns: 25% 25% 25%;
   padding-top: 50px;
-  margin-left: 10%;
-  margin-right: 10%;
+  margin-left: 7%;
+  margin-right: 7%;
   text-align: center;
   justify-content: space-around;
   grid-template-areas: "izquierda centro derecha"; }
@@ -221,7 +228,9 @@ section {
     .gridIndexServicios {
       margin-bottom: 60px;
       text-align: center;
-      grid-template-areas: "izquierda izquierda izquierda" "centro centro centro" "derecha derecha derecha"; } }
+      grid-template-areas: "izquierda izquierda izquierda"
+ "centro centro centro"
+ "derecha derecha derecha"; } }
   @media screen and (min-width: 250px) and (max-width: 768px) {
     .gridIndexServicios {
       justify-content: space-between;
@@ -309,13 +318,18 @@ ul {
         grid-gap: 0%;
         margin-left: 10px;
         margin-right: 10px;
-        grid-template-areas: "izquierda izquierda" "derecha derecha"; } }
+        grid-template-areas: "izquierda izquierda"
+ "derecha derecha"; } }
     .nosotros-content .grid-parrafo #p-izquierda {
       grid-area: izquierda; }
       .nosotros-content .grid-parrafo #p-izquierda p {
         font-size: 1rem;
         color: black;
         font-family: 'Montserrat', sans-serif; }
+      .nosotros-content .grid-parrafo #p-izquierda .trabajamos {
+        font-size: 20px;
+        color: #6f9c53;
+        font-weight: 600; }
     .nosotros-content .grid-parrafo #p-derecha {
       grid-area: derecha; }
       .nosotros-content .grid-parrafo #p-derecha p {
@@ -337,17 +351,18 @@ ul {
 .grid-nosotros {
   display: grid;
   grid-gap: 6%;
-  grid-template-columns: 44% 38%;
+  grid-template-columns: 47% 41%;
   justify-content: space-around;
   text-align: center;
-  margin-right: 11%;
-  margin-left: 11%;
+  margin-right: 8%;
+  margin-left: 8%;
   margin-top: 70px;
   grid-template-areas: "izquierda derecha"; }
   @media screen and (min-width: 250px) and (max-width: 992px) {
     .grid-nosotros {
       grid-gap: 3%;
-      grid-template-areas: "izquierda izquierda" "derecha derecha"; } }
+      grid-template-areas: "izquierda izquierda"
+ "derecha derecha"; } }
   .grid-nosotros #nosotros-izquierda {
     grid-area: izquierda; }
     .grid-nosotros #nosotros-izquierda h2 {
@@ -382,7 +397,8 @@ ul {
     border-radius: 200%;
     margin-left: 20px;
     margin-right: 10px;
-    margin-bottom: 20px; }
+    margin-bottom: 20px;
+    margin-top: 10px; }
 
 /*--------------------------------------------------------------
 # Servicios
@@ -401,8 +417,8 @@ ul {
   grid-gap: 5%;
   grid-template-columns: 25% 25% 25%;
   padding-top: 40px;
-  margin-left: 10%;
-  margin-right: 10%;
+  margin-left: 7%;
+  margin-right: 7%;
   padding-bottom: 40px;
   text-align: center;
   justify-content: space-around;
@@ -410,7 +426,9 @@ ul {
   @media screen and (min-width: 250px) and (max-width: 768px) {
     .gridIndexServicios1 {
       text-align: center;
-      grid-template-areas: "izquierda izquierda izquierda" "centro centro centro" "derecha derecha derecha"; } }
+      grid-template-areas: "izquierda izquierda izquierda"
+ "centro centro centro"
+ "derecha derecha derecha"; } }
   .gridIndexServicios1 .gridIndexServiciosIzquierda1 {
     grid-area: izquierda; }
   .gridIndexServicios1 .gridIndexServiciosCentro1 {
@@ -421,11 +439,6 @@ ul {
     height: 80px;
     width: 80px;
     margin-top: 35px;
-    margin-bottom: 1rem; }
-  .gridIndexServicios1 .imagenesIndexServicios2 {
-    height: 80px;
-    width: 80px;
-    margin-top: 10px;
     margin-bottom: 1rem; }
   .gridIndexServicios1 .tituloIndexServicios1 {
     font-size: 1.3rem;
@@ -457,7 +470,8 @@ ul {
     grid-template-areas: "izquierda derecha"; }
     @media screen and (min-width: 250px) and (max-width: 768px) {
       #seccionEstrategia .grid-estrategia {
-        grid-template-areas: "izquierda izquierda" "derecha derecha"; } }
+        grid-template-areas: "izquierda izquierda"
+ "derecha derecha"; } }
     #seccionEstrategia .grid-estrategia #grid-estrategia-izquierda {
       grid-area: izquierda;
       margin-left: 100px;
@@ -486,14 +500,13 @@ ul {
     font-size: 25px;
     margin-top: 55px;
     padding: 10px;
-    padding-right: 315px;
+    padding-left: 170px;
     font-family: 'Montserrat', sans-serif;
     color: white;
     margin-bottom: 1rem;
     font-weight: 300;
     background-color: #848484;
     margin-bottom: 1rem;
-    text-align: right;
     position: relative; }
     @media screen and (min-width: 250px) and (max-width: 992px) {
       #seccionCapacitaciones #capacitaciones {
@@ -511,33 +524,33 @@ ul {
     @media screen and (min-width: 250px) and (max-width: 768px) {
       #seccionCapacitaciones .grid-capacitaciones {
         align-content: center;
-        grid-template-areas: "derecha derecha" "izquierda izquierda"; } }
+        grid-template-areas: "derecha derecha"
+ "izquierda izquierda"; } }
     #seccionCapacitaciones .grid-capacitaciones #grid-capacitaciones-izquierda {
       grid-area: izquierda;
+      margin-bottom: 20px;
+      margin-top: 20px;
       margin-left: 100px; }
       @media screen and (min-width: 250px) and (max-width: 992px) {
         #seccionCapacitaciones .grid-capacitaciones #grid-capacitaciones-izquierda {
-          margin-right: 10px;
-          margin-left: 10px; } }
-      #seccionCapacitaciones .grid-capacitaciones #grid-capacitaciones-izquierda ul {
-        margin-left: 0px; }
-        #seccionCapacitaciones .grid-capacitaciones #grid-capacitaciones-izquierda ul li {
-          font-size: 1rem; }
-    #seccionCapacitaciones .grid-capacitaciones #grid-capacitaciones-derecha {
-      grid-area: derecha;
-      margin-right: 100px;
-      margin-bottom: 20px;
-      margin-top: 20px;
-      margin-left: 50px; }
-      @media screen and (min-width: 250px) and (max-width: 992px) {
-        #seccionCapacitaciones .grid-capacitaciones #grid-capacitaciones-derecha {
           margin-left: 0px;
           margin-right: 0px; } }
-      #seccionCapacitaciones .grid-capacitaciones #grid-capacitaciones-derecha #ilus-capacitaciones {
+      #seccionCapacitaciones .grid-capacitaciones #grid-capacitaciones-izquierda #ilus-capacitaciones {
         margin-left: 50px; }
         @media screen and (min-width: 250px) and (max-width: 992px) {
-          #seccionCapacitaciones .grid-capacitaciones #grid-capacitaciones-derecha #ilus-capacitaciones {
+          #seccionCapacitaciones .grid-capacitaciones #grid-capacitaciones-izquierda #ilus-capacitaciones {
             margin-left: 0px; } }
+    #seccionCapacitaciones .grid-capacitaciones #grid-capacitaciones-derecha {
+      grid-area: derecha;
+      margin-right: 100px; }
+      @media screen and (min-width: 250px) and (max-width: 992px) {
+        #seccionCapacitaciones .grid-capacitaciones #grid-capacitaciones-derecha {
+          margin-right: 10px;
+          margin-left: 10px; } }
+      #seccionCapacitaciones .grid-capacitaciones #grid-capacitaciones-derecha ul {
+        margin-left: 0px; }
+        #seccionCapacitaciones .grid-capacitaciones #grid-capacitaciones-derecha ul li {
+          font-size: 1rem; }
 
 #seccionComunicacion #comunicacionDeImpacto {
   padding: 10px;
@@ -565,7 +578,8 @@ ul {
   @media screen and (min-width: 250px) and (max-width: 768px) {
     #seccionComunicacion .grid-comunicacion {
       align-content: center;
-      grid-template-areas: "izquierda izquierda" "derecha derecha"; } }
+      grid-template-areas: "izquierda izquierda"
+ "derecha derecha"; } }
   #seccionComunicacion .grid-comunicacion #grid-comunicacion-izquierda {
     grid-area: izquierda;
     margin-left: 180px;
@@ -654,7 +668,8 @@ ul {
   grid-template-areas: "izquierda derecha"; }
   @media screen and (min-width: 250px) and (max-width: 768px) {
     .grid-contacto {
-      grid-template-areas: "izquierda izquierda" "derecha derecha"; } }
+      grid-template-areas: "izquierda izquierda"
+ "derecha derecha"; } }
   .grid-contacto #izquierda {
     grid-area: izquierda;
     padding: 20px;
@@ -740,7 +755,9 @@ ul {
     margin-bottom: 0px;
     padding-bottom: 0px;
     align-items: center;
-    grid-template-areas: "tel num" "sobre mail" "flecha ciudad"; }
+    grid-template-areas: "tel num"
+ "sobre mail"
+ "flecha ciudad"; }
     .grid-contacto .gridContactoIcons #tel-icono-contacto {
       grid-area: tel; }
     .grid-contacto .gridContactoIcons #tel-enlace-contacto {
@@ -812,7 +829,9 @@ footer {
     @media screen and (min-width: 250px) and (max-width: 768px) {
       footer .footer-grid {
         width: 100%;
-        grid-template-areas: "izquierda izquierda" "centro centro" "derecha derecha"; } }
+        grid-template-areas: "izquierda izquierda"
+ "centro centro"
+ "derecha derecha"; } }
     footer .footer-grid #ft-izquierda {
       grid-area: izquierda; }
     footer .footer-grid #ft-centro {
@@ -852,7 +871,9 @@ footer {
       margin-bottom: 0px;
       margin-left: 0px;
       margin-right: 0px;
-      grid-template-areas: "tel num" "sobre mail" "flecha ciudad"; }
+      grid-template-areas: "tel num"
+ "sobre mail"
+ "flecha ciudad"; }
       @media screen and (min-width: 250px) and (max-width: 768px) {
         footer .footer-grid .ft-grid-1 {
           width: 100%; } }
@@ -885,7 +906,10 @@ footer {
       padding: 0px;
       margin-bottom: 0px;
       padding-bottom: 0px;
-      grid-template-areas: "ig iglink" "fb fblink" "tw twlink" "lin linlink"; }
+      grid-template-areas: "ig iglink"
+ "fb fblink"
+ "tw twlink"
+ "lin linlink"; }
       footer .footer-grid .ft-grid-2 #insta-icono {
         grid-area: ig; }
       footer .footer-grid .ft-grid-2 #insta-enlace {
