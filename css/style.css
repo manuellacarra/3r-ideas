@@ -156,8 +156,7 @@ section {
   @media screen and (min-width: 250px) and (max-width: 768px) {
     .gridIndex {
       margin-top: 20px;
-      grid-template-areas: "izquierda izquierda"
- "derecha derecha"; } }
+      grid-template-areas: "izquierda izquierda" "derecha derecha"; } }
   .gridIndex #indexIzquierda {
     grid-area: izquierda; }
     @media screen and (min-width: 250px) and (max-width: 992px) {
@@ -228,9 +227,7 @@ section {
     .gridIndexServicios {
       margin-bottom: 60px;
       text-align: center;
-      grid-template-areas: "izquierda izquierda izquierda"
- "centro centro centro"
- "derecha derecha derecha"; } }
+      grid-template-areas: "izquierda izquierda izquierda" "centro centro centro" "derecha derecha derecha"; } }
   @media screen and (min-width: 250px) and (max-width: 768px) {
     .gridIndexServicios {
       justify-content: space-between;
@@ -318,8 +315,7 @@ ul {
         grid-gap: 0%;
         margin-left: 10px;
         margin-right: 10px;
-        grid-template-areas: "izquierda izquierda"
- "derecha derecha"; } }
+        grid-template-areas: "izquierda izquierda" "derecha derecha"; } }
     .nosotros-content .grid-parrafo #p-izquierda {
       grid-area: izquierda; }
       .nosotros-content .grid-parrafo #p-izquierda p {
@@ -361,8 +357,7 @@ ul {
   @media screen and (min-width: 250px) and (max-width: 992px) {
     .grid-nosotros {
       grid-gap: 3%;
-      grid-template-areas: "izquierda izquierda"
- "derecha derecha"; } }
+      grid-template-areas: "izquierda izquierda" "derecha derecha"; } }
   .grid-nosotros #nosotros-izquierda {
     grid-area: izquierda; }
     .grid-nosotros #nosotros-izquierda h2 {
@@ -426,9 +421,7 @@ ul {
   @media screen and (min-width: 250px) and (max-width: 768px) {
     .gridIndexServicios1 {
       text-align: center;
-      grid-template-areas: "izquierda izquierda izquierda"
- "centro centro centro"
- "derecha derecha derecha"; } }
+      grid-template-areas: "izquierda izquierda izquierda" "centro centro centro" "derecha derecha derecha"; } }
   .gridIndexServicios1 .gridIndexServiciosIzquierda1 {
     grid-area: izquierda; }
   .gridIndexServicios1 .gridIndexServiciosCentro1 {
@@ -470,8 +463,7 @@ ul {
     grid-template-areas: "izquierda derecha"; }
     @media screen and (min-width: 250px) and (max-width: 768px) {
       #seccionEstrategia .grid-estrategia {
-        grid-template-areas: "izquierda izquierda"
- "derecha derecha"; } }
+        grid-template-areas: "izquierda izquierda" "derecha derecha"; } }
     #seccionEstrategia .grid-estrategia #grid-estrategia-izquierda {
       grid-area: izquierda;
       margin-left: 100px;
@@ -524,8 +516,7 @@ ul {
     @media screen and (min-width: 250px) and (max-width: 768px) {
       #seccionCapacitaciones .grid-capacitaciones {
         align-content: center;
-        grid-template-areas: "derecha derecha"
- "izquierda izquierda"; } }
+        grid-template-areas: "izquierda izquierda" "derecha derecha"; } }
     #seccionCapacitaciones .grid-capacitaciones #grid-capacitaciones-izquierda {
       grid-area: izquierda;
       margin-bottom: 20px;
@@ -578,8 +569,7 @@ ul {
   @media screen and (min-width: 250px) and (max-width: 768px) {
     #seccionComunicacion .grid-comunicacion {
       align-content: center;
-      grid-template-areas: "izquierda izquierda"
- "derecha derecha"; } }
+      grid-template-areas: "izquierda izquierda" "derecha derecha"; } }
   #seccionComunicacion .grid-comunicacion #grid-comunicacion-izquierda {
     grid-area: izquierda;
     margin-left: 180px;
@@ -609,6 +599,17 @@ ul {
       margin-left: 0px; }
       #seccionComunicacion .grid-comunicacion #grid-comunicacion-derecha ul li {
         font-size: 1rem; }
+
+.p-servicios {
+  line-height: 1rem; }
+  @media screen and (min-width: 250px) and (max-width: 768px) {
+    .p-servicios {
+      line-height: 1.5rem; } }
+
+.hoja {
+  height: 15px;
+  width: 15px;
+  margin-right: 10px; }
 
 .fotos-servicios {
   height: auto;
@@ -668,8 +669,7 @@ ul {
   grid-template-areas: "izquierda derecha"; }
   @media screen and (min-width: 250px) and (max-width: 768px) {
     .grid-contacto {
-      grid-template-areas: "izquierda izquierda"
- "derecha derecha"; } }
+      grid-template-areas: "izquierda izquierda" "derecha derecha"; } }
   .grid-contacto #izquierda {
     grid-area: izquierda;
     padding: 20px;
@@ -755,9 +755,7 @@ ul {
     margin-bottom: 0px;
     padding-bottom: 0px;
     align-items: center;
-    grid-template-areas: "tel num"
- "sobre mail"
- "flecha ciudad"; }
+    grid-template-areas: "tel num" "sobre mail" "flecha ciudad"; }
     .grid-contacto .gridContactoIcons #tel-icono-contacto {
       grid-area: tel; }
     .grid-contacto .gridContactoIcons #tel-enlace-contacto {
@@ -829,9 +827,7 @@ footer {
     @media screen and (min-width: 250px) and (max-width: 768px) {
       footer .footer-grid {
         width: 100%;
-        grid-template-areas: "izquierda izquierda"
- "centro centro"
- "derecha derecha"; } }
+        grid-template-areas: "izquierda izquierda" "centro centro" "derecha derecha"; } }
     footer .footer-grid #ft-izquierda {
       grid-area: izquierda; }
     footer .footer-grid #ft-centro {
@@ -871,9 +867,7 @@ footer {
       margin-bottom: 0px;
       margin-left: 0px;
       margin-right: 0px;
-      grid-template-areas: "tel num"
- "sobre mail"
- "flecha ciudad"; }
+      grid-template-areas: "tel num" "sobre mail" "flecha ciudad"; }
       @media screen and (min-width: 250px) and (max-width: 768px) {
         footer .footer-grid .ft-grid-1 {
           width: 100%; } }
@@ -906,10 +900,7 @@ footer {
       padding: 0px;
       margin-bottom: 0px;
       padding-bottom: 0px;
-      grid-template-areas: "ig iglink"
- "fb fblink"
- "tw twlink"
- "lin linlink"; }
+      grid-template-areas: "ig iglink" "fb fblink" "tw twlink" "lin linlink"; }
       footer .footer-grid .ft-grid-2 #insta-icono {
         grid-area: ig; }
       footer .footer-grid .ft-grid-2 #insta-enlace {
@@ -957,7 +948,7 @@ footer {
           margin-left: 10px; } }
   footer #derechos {
     background-color: #b2b2b2;
-    padding: 15px; }
+    padding: 10px; }
     footer #derechos #derechosP {
       text-align: center;
       font-size: 11px;
