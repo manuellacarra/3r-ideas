@@ -215,6 +215,13 @@ section {
     margin-top: .5rem;
     margin-bottom: .5rem; }
 
+.servicios-cards{
+  display: flex; flex-direction: row; justify-content: space-around;}
+  @media screen and (min-width: 250px) and (max-width: 768px){
+    .servicios-cards{
+      flex-direction: column; } }
+    
+
 .flip-card {
   background-color: transparent;
   width: 200px;
@@ -434,6 +441,11 @@ ul {
     margin-right: 10px;
     margin-bottom: 20px;
     margin-top: 10px; }
+  .grid-nosotros img:hover{
+      opacity: 0.6;
+      transform-origin: center;
+      transition: 300ms;}
+
 
 /*--------------------------------------------------------------
 # Servicios
